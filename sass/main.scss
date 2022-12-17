@@ -1,0 +1,70 @@
+//Import Functions
+@import "../node_modules/bootstrap/scss/functions";
+
+//Custom colours
+
+
+
+$primary: rgb(119,168,231);
+$secondary: rgb(113, 224, 211);
+$light: rgb(252, 232, 232) ; 
+
+//Variables and Mixins
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+//Globals
+$enable-shadows:              true;
+$enable-gradients:            true;
+$enable-cssgrid:              false;
+
+
+$custom-colours: (
+    // "primary-blue": rgb(119,168,231),
+    "secondary-light": white,
+);
+
+
+
+//Merge colours
+$theme-colors: map-merge($theme-colors, $custom-colours);
+
+//add key colour palette and classes
+@each $color, $val in $colors{
+    .bg-#{$color}{
+      background-color: $val;
+    }
+  
+  
+ 
+    .bg-#{$color}{
+      background-color:  $val;
+    }
+  .bg-#{$color}-light {
+    background-color: tint-color($val, 80%);
+  }
+  
+  .bg-#{$color}-dark {
+    background-color: shade-color($val, 50%);
+  }
+
+  .text-#{$color}-dark {
+    color: shade-color($val, 10%);
+  }
+
+  
+}
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .5,
+  2: $spacer * .75,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
