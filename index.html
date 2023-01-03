@@ -15,7 +15,7 @@
 		<div class="navbar navbar-expand-lg bg-primary sticky-top">
 			<div class="container-fluid">
 				<button
-					class="navbar-toggler d-flex"
+					class="navbar-toggler"
 					type="button"
 					data-bs-toggle="collapse"
 					data-bs-target="#nowExpand"
@@ -25,22 +25,30 @@
 				>
 					<span class="navbar-toggler-icon"> </span>
 				</button>
+				<div class="row">
+					<div class="col-12">
+						<div class="collapse navbar-collapse" id="nowExpand">
+							<a
+								class="navbar-brand text-light d-flex justify-content-start"
+								href="#"
+								>OnTheFly
+							</a>
 
-				<div class="collapse navbar-collapse" id="nowExpand">
-					<a class="navbar-brand text-light" href="#">OnTheFly </a>
-
-					<ul class="navbar-nav d-flex justify-content-evenly">
-						<li class="nav-item">
-							<a class="text-light" href="#">Home</a>
-						</li>
-						<li>
-							<a class="text-light" href="#">On Tonight</a>
-						</li>
-						<li>
-							<a class="text-light" href="#">What's hot</a>
-						</li>
-					</ul>
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link text-light" href="#">Home</a>
+								</li>
+								<li>
+									<a class="nav-link text-light" href="#">On Tonight</a>
+								</li>
+								<li>
+									<a class="nav-link text-light" href="#">What's hot</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
+
 				<!-- Make Target class for search button to open search bar -->
 
 				<div class="collapse w-100" id="searchForm">
@@ -80,15 +88,17 @@
 			</div>
 		</div>
 		<!-- Sidebar -->
-		<a
-			class="btn"
-			data-bs-toggle="offcanvas"
-			href="#offcanvas"
-			role="button"
-			aria-controls="offcanvas"
-		>
-			<img src="images/bus-solid.svg" alt="" srcset="" />
-		</a>
+		<div class="sidebar">
+			<button
+				class="btn"
+				type="button"
+				data-bs-toggle="offcanvas"
+				data-bs-target="#offcanvas"
+				aria-controls="offcanvas"
+			>
+				test<img src="images/bus-solid.svg" alt="" srcset="" />
+			</button>
+		</div>
 		<div
 			class="offcanvas offcanvas-start"
 			tabindex="-1"
@@ -108,7 +118,7 @@
 			</div>
 			<div class="sidebar-body">
 				<h3>Events</h3>
-				<ul>
+				<ul class="list-unstyled">
 					<li>View All</li>
 					<li>Live</li>
 					<li>Music</li>
@@ -294,146 +304,118 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="filter-cards">
-			<div class="card col-2">
-				<div class="row">
-					<ul class="d-flex align-items-center">
-						<li>
-							<img src="images/music.png" alt="" srcset="" class="w-25" />
-						</li>
-						<li>
-							<h5>Music</h5>
-						</li>
-					</ul>
-				</div>
-				<!-- <div class="card col-3">
-					<div class="row" style="display: flex; align-items: flex-start">
-						<div class="icon col-3">
-							<img src="images/music.png" alt="" srcset="" class="w-50 h-50" />
+		<!-- End of sidebar -->
+		<!-- Filter Cards -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-1">
+					<div class="container-sm bg-secondary rounded-3">
+						<div class="row g-0 d-flex align-items-md-center">
+							<div class="col-sm-4">
+								<div class="col-sm-4 bg-light rounded-circle">
+									<img src="images/music.png" class="img-fluid" alt="Music" />
+								</div>
 							</div>
-							<div class="col-9">
-								<p>Music</p>
-							</div> -->
+							<div class="col-sm-6">
+								<h5 class="card-title flex-shrink-1">Music</h5>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="nearby-cards">
-			<div class="containers-lg">
-				<!-- <div class="row gap-1 mt-1 mx-1"> -->
-				<div class="row">
-					<div class="col-md-3 col-sm-6">
-						<div class="card">
-							<img
-								src="images/crimbo.jpg"
-								class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
-								alt="Christmas Market"
-							/>
-							<div class="card-body">
-								<h4 class="card-title">Winter solstice celebration</h4>
-								<p class="card-text">
-									A magical winter solstices celebration in the Glendalough
-									Valley, with a combination of storytelling, sound healing and
-									nature connection.
-								</p>
-								<div class="text-light text-center">
-									<button
-										type="button"
-										class="btn btn-primary text-light rounded-5"
-									>
-										View More
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="card">
-							<img
-								src="images/crimbo.jpg"
-								class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
-								alt="Christmas Market"
-							/>
-							<div class="card-body">
-								<h4 class="card-title">Winter solstice celebration</h4>
-								<p class="card-text">
-									A magical winter solstices celebration in the Glendalough
-									Valley, with a combination of storytelling, sound healing and
-									nature connection.
-								</p>
-								<div class="text-light text-center">
-									<button
-										type="button rounded-3"
-										class="btn btn-primary text-light rounded-5"
-									>
-										View More
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="card">
-							<img
-								src="images/crimbo.jpg"
-								class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
-								alt="Christmas Market"
-							/>
-							<div class="card-body">
-								<h4 class="card-title">Winter solstice celebration</h4>
-								<p class="card-text">
-									A magical winter solstices celebration in the Glendalough
-									Valley, with a combination of storytelling, sound healing and
-									nature connection.
-								</p>
-								<div class="text-light text-center">
-									<button
-										type="button rounded-3"
-										class="btn btn-primary text-light rounded-4"
-									>
-										View More
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- <div class="card col-md-3 col-sm-6 shadow-sm">
-					<div class="card-event-image">
+		<div class="containers-lg">
+			<!-- <div class="row gap-1 mt-1 mx-1"> -->
+			<div class="row justify-content-center">
+				<div class="col-md-3">
+					<div class="card">
 						<img
 							src="images/crimbo.jpg"
-							class="img-fluid w-100 rounded shadow-sm"
-							alt=""
-							srcset=""
+							class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+							alt="Christmas Market"
 						/>
+						<div class="card-body">
+							<h4 class="card-title">Winter solstice celebration</h4>
+							<p class="card-text">
+								A magical winter solstices celebration in the Glendalough
+								Valley, with a combination of storytelling, sound healing and
+								nature connection.
+							</p>
+							<div class="text-light text-center">
+								<button
+									type="button"
+									class="btn btn-primary text-light rounded-5"
+								>
+									View More
+								</button>
+							</div>
+						</div>
 					</div>
-					<div class="text">
-						<h3>Winter solstice celebration</h3>
-						<p>
-							A magical winter solstices celebration in the Glendalough Valley,
-							with a combination of storytelling, sound healing and nature
-							connection.
-						</p>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="card">
+						<img
+							src="images/crimbo.jpg"
+							class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+							alt="Christmas Market"
+						/>
+						<div class="card-body">
+							<h4 class="card-title">Winter solstice celebration</h4>
+							<p class="card-text">
+								A magical winter solstices celebration in the Glendalough
+								Valley, with a combination of storytelling, sound healing and
+								nature connection.
+							</p>
+							<div class="text-light text-center">
+								<button
+									type="button rounded-3"
+									class="btn btn-primary text-light rounded-5"
+								>
+									View More
+								</button>
+							</div>
+						</div>
 					</div>
-					<div class="text-light text-center">
-						<button type="button rounded-3" class="btn btn-primary text-light">
-							View More
-						</button>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="card">
+						<img
+							src="images/crimbo.jpg"
+							class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+							alt="Christmas Market"
+						/>
+						<div class="card-body">
+							<h4 class="card-title">Winter solstice celebration</h4>
+							<p class="card-text">
+								A magical winter solstices celebration in the Glendalough
+								Valley, with a combination of storytelling, sound healing and
+								nature connection.
+							</p>
+							<div class="text-light text-center">
+								<button
+									type="button rounded-3"
+									class="btn btn-primary text-light rounded-4"
+								>
+									View More
+								</button>
+							</div>
+						</div>
 					</div>
-				</div> -->
 				</div>
 			</div>
 		</div>
+
 		<!-- .nearby-cards.row>.col>.featured>.row>.col.lg-3*4> -->
-		<div class="hot-cards mt-5">
+		<div class="container-lg">
+			<h5>Our Picks</h5>
 			<div class="row">
-				<div class="featured col-3 grow-1">
-					<h5>Our Picks</h5>
-					<div class="row object-fit">
-						<div class="col lg-3">
+				<div class="col-lg-4">
+					<div class="row">
+						<div class="col-lg-6">
 							<div class="card">
 								<img
 									src="images/crimbo.jpg"
-									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									class="card-img-top img-fluid rounded-2 shadow-sm card-img-top"
 									alt="Christmas Market"
 								/>
 								<div class="card-body">
@@ -441,11 +423,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="col lg-3">
+						<div class="col-lg-6">
 							<div class="card">
 								<img
 									src="images/crimbo.jpg"
-									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									class="card-img-top img-fluid rounded-2 shadow-sm card-img-top"
 									alt="Christmas Market"
 								/>
 								<div class="card-body">
@@ -453,11 +435,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="col lg-3">
+						<div class="col-lg-6">
 							<div class="card">
 								<img
 									src="images/crimbo.jpg"
-									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									class="card-img-top img-fluid rounded-2 shadow-sm card-img-top"
 									alt="Christmas Market"
 								/>
 								<div class="card-body">
@@ -465,11 +447,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="col lg-3">
+						<div class="col-lg-6">
 							<div class="card">
 								<img
 									src="images/crimbo.jpg"
-									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									class="card-img-top img-fluid rounded-2 shadow-sm card-img-top"
 									alt="Christmas Market"
 								/>
 								<div class="card-body">
@@ -479,13 +461,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="nearby-section col-9">
+				<div class="col-lg-8">
 					<div class="row">
-						<div class="col-3">
+						<div class="col-lg-4">
 							<div class="card">
 								<img
 									src="images/crimbo.jpg"
-									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									class="card-img-top img-fluid rounded-2 shadow-sm card-img-top"
 									alt="Christmas Market"
 								/>
 								<div class="card-body">
@@ -506,11 +488,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
+						<div class="col-lg-4">
 							<div class="card">
 								<img
 									src="images/crimbo.jpg"
-									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									class="card-img-top img-fluid rounded-2 shadow-sm card-img-top"
 									alt="Christmas Market"
 								/>
 								<div class="card-body">
@@ -531,11 +513,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
+						<div class="col-lg-4">
 							<div class="card">
 								<img
 									src="images/crimbo.jpg"
-									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									class="card-img-top img-fluid rounded-2 shadow-sm card-img-top"
 									alt="Christmas Market"
 								/>
 								<div class="card-body">
@@ -556,11 +538,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
+						<div class="col-lg-4">
 							<div class="card">
 								<img
 									src="images/crimbo.jpg"
-									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									class="card-img-top img-fluid rounded-2 shadow-sm card-img-top"
 									alt="Christmas Market"
 								/>
 								<div class="card-body">
@@ -581,11 +563,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
+						<div class="col-lg-4">
 							<div class="card">
 								<img
 									src="images/crimbo.jpg"
-									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									class="card-img-top img-fluid rounded-2 shadow-sm card-img-top"
 									alt="Christmas Market"
 								/>
 								<div class="card-body">
@@ -606,11 +588,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
+						<div class="col-lg-4">
 							<div class="card">
 								<img
 									src="images/crimbo.jpg"
-									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									class="card-img-top img-fluid rounded-2 shadow-sm card-img-top"
 									alt="Christmas Market"
 								/>
 								<div class="card-body">
@@ -635,41 +617,54 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="footer bg-dark text-light">
 			<div class="row px-1">
 				<div class="col-3">
 					<h5>About us</h5>
-					<ul>
-						<li>Who we are</li>
-						<li>How to use</li>
-						<li>FAQs</li>
-						<li>Sitemap</li>
+					<ul class="list-unstyled">
+						<li><a href="#" class="text-decoration-none">Who we are</a></li>
+						<li><a href="#" class="text-decoration-none">How to use</a></li>
+						<li><a href="#" class="text-decoration-none">FAQs</a></li>
+						<li><a href="#" class="text-decoration-none">Sitemap</a></li>
 					</ul>
 				</div>
 				<div class="col-3">
 					<h5>Our Website</h5>
-					<ul>
-						<li>Find local events</li>
-						<li>Going on holiday? plan by city here</li>
-						<li>Online e-ticketing</li>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#" class="text-decoration-none">Find local events</a>
+						</li>
+						<li>
+							<a href="#" class="text-decoration-none"
+								>Going on holiday? plan by city here
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-decoration-none">Online e-ticketing </a>
+						</li>
 					</ul>
 				</div>
 				<div class="col-3">
 					<h5>Popular cities</h5>
-					<ul>
-						<li>Dublin Events</li>
-						<li>Galway Events</li>
-						<li>Cork Events</li>
-						<li>Limerick Events</li>
+					<ul class="list-unstyled">
+						<li><a href="#" class="text-decoration-none">Dublin Events</a></li>
+						<li><a href="#" class="text-decoration-none">Galway Events</a></li>
+						<li><a href="#" class="text-decoration-none">Cork Events</a></li>
+						<li>
+							<a href="#" class="text-decoration-none">Limerick Events </a>
+						</li>
 					</ul>
 				</div>
 				<div class="col-3">
 					<h5>Contact us</h5>
-					<ul>
-						<li>Facebook</li>
-						<li>Twitter</li>
-						<li>Instagram</li>
-						<li>Live chat assistance</li>
+					<ul class="list-unstyled">
+						<li><a href="#" class="text-decoration-none">Facebook</a></li>
+						<li><a href="#" class="text-decoration-none">Twitter</a></li>
+						<li><a href="#" class="text-decoration-none">Instagram</a></li>
+						<li>
+							<a href="#" class="text-decoration-none">Live chat assistance </a>
+						</li>
 					</ul>
 				</div>
 			</div>
