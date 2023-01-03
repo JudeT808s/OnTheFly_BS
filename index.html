@@ -12,11 +12,10 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<div class="navbar navbar-expand-lg bg-primary">
+		<div class="navbar navbar-expand-lg bg-primary sticky-top">
 			<div class="container-fluid">
-				<a class="navbrar-brand text-light" href="#">OnTheFly </a>
 				<button
-					class="navbar-toggler"
+					class="navbar-toggler d-flex"
 					type="button"
 					data-bs-toggle="collapse"
 					data-bs-target="#nowExpand"
@@ -24,10 +23,13 @@
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"> </span>
 				</button>
+
 				<div class="collapse navbar-collapse" id="nowExpand">
-					<ul class="navbar-nav gap-5">
+					<a class="navbar-brand text-light" href="#">OnTheFly </a>
+
+					<ul class="navbar-nav d-flex justify-content-evenly">
 						<li class="nav-item">
 							<a class="text-light" href="#">Home</a>
 						</li>
@@ -38,6 +40,10 @@
 							<a class="text-light" href="#">What's hot</a>
 						</li>
 					</ul>
+				</div>
+				<!-- Make Target class for search button to open search bar -->
+
+				<div class="collapse w-100" id="searchForm">
 					<form class="d-flex" role="search">
 						<input
 							class="form-control me-2"
@@ -45,14 +51,251 @@
 							placeholder="Search"
 							aria-label="Search"
 						/>
-						<button class="btn btn-outline-success" type="submit">
-							Search
-						</button>
+						<div class="search-section">
+							<a
+								class="nav-link search"
+								href="#searchForm"
+								data-bs-toggle="collapse"
+								data-bs-target="#searchForm"
+								<img
+								src="images/cross.png"
+								alt="X"
+								srcset=""
+								class="w-50"
+							>
+							</a>
+						</div>
 					</form>
+				</div>
+				<a
+					class="nav-link d-flex justify-content-end"
+					href="#searchForm"
+					data-bs-target="#searchForm"
+					data-bs-toggle="collapse"
+				>
+					<div class="search-open-button d-flex">
+						<img src="images/search.png" alt="Search" srcset="" class="w-25" />
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- Sidebar -->
+		<a
+			class="btn"
+			data-bs-toggle="offcanvas"
+			href="#offcanvas"
+			role="button"
+			aria-controls="offcanvas"
+		>
+			<img src="images/bus-solid.svg" alt="" srcset="" />
+		</a>
+		<div
+			class="offcanvas offcanvas-start"
+			tabindex="-1"
+			id="offcanvas"
+			aria-labelledby="sidebarLabel"
+		>
+			<div class="sidebar-header d-flex">
+				<h5 class="sidebar-title" id="sidebarLabel">sidebar</h5>
+				<div class="close d-flex justify-content-end">
+					<button
+						type="button"
+						class="btn-close"
+						data-bs-dismiss="offcanvas"
+						aria-label="Close"
+					></button>
+				</div>
+			</div>
+			<div class="sidebar-body">
+				<h3>Events</h3>
+				<ul>
+					<li>View All</li>
+					<li>Live</li>
+					<li>Music</li>
+					<li>Sport</li>
+					<li>Family Friendly</li>
+				</ul>
+				<div class="cuisine dropdown mt-3">
+					<button
+						class="btn btn-secondary dropdown-toggle"
+						type="button"
+						data-bs-toggle="dropdown"
+					>
+						Cuisine
+					</button>
+					<div class="dropdown-menu">
+						<div class="form-check form-switch">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								role="switch"
+								id="Indian"
+							/>
+							<label class="form-check-label" for="Indian">Indian</label>
+						</div>
+						<div class="form-check form-switch">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								role="switch"
+								id="Chinese"
+							/>
+							<label class="form-check-label" for="Chinese">Chinese</label>
+						</div>
+						<div class="form-check form-switch">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								role="switch"
+								id="Italian"
+							/>
+							<label class="form-check-label" for="Italian">Italian</label>
+						</div>
+						<div class="form-check form-switch">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								role="switch"
+								id="American"
+							/>
+							<label class="form-check-label" for="American">American</label>
+						</div>
+					</div>
+				</div>
+				<div class="group dropdown mt-3">
+					<button
+						class="btn btn-secondary dropdown-toggle"
+						type="button"
+						data-bs-toggle="dropdown"
+					>
+						Group Size
+					</button>
+					<div class="dropdown-menu">
+						<div class="form-check form-radio">
+							<input type="radio" name="btnradio" id="btnradio1" />
+							Small less than 3
+						</div>
+						<div class="form-check form-radio">
+							<input type="radio" name="btnradio" id="btnradio2" />
+							Medium less than 6
+							<div class="form-check form-radio">
+								<input type="radio" name="btnradio" id="btnradio3" />
+
+								Large less than 10
+							</div>
+							<div class="form-check form-radio">
+								<input type="radio" name="btnradio" id="btnradio" />
+								Large Group 10+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="allergy dropdown mt-3">
+					<button
+						class="btn btn-secondary dropdown-toggle"
+						type="button"
+						data-bs-toggle="dropdown"
+					>
+						Allergies
+					</button>
+					<div class="dropdown-menu">
+						<div class="form-check form-switch">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								role="switch"
+								id="Peanuts"
+							/>
+							<label class="form-check-label" for="Peanuts">Peanuts</label>
+						</div>
+						<div class="form-check form-switch">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								role="switch"
+								id="Crustacean"
+							/>
+							<label class="form-check-label" for="Crustacean"
+								>Crustacean</label
+							>
+						</div>
+						<div class="form-check form-switch">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								role="switch"
+								id="Wheat"
+							/>
+							<label class="form-check-label" for="Wheat">Wheat</label>
+						</div>
+						<div class="form-check form-switch">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								role="switch"
+								id="Fish"
+							/>
+							<label class="form-check-label" for="Fish">Fish</label>
+						</div>
+					</div>
+				</div>
+				<div class="location dropdown mt-3">
+					<button
+						class="btn btn-secondary dropdown-toggle"
+						type="button"
+						data-bs-toggle="dropdown"
+					>
+						Location
+					</button>
+					<div class="dropdown-menu">
+						<div class="form-check form-switch">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								role="switch"
+								id="Dublin1"
+							/>
+							<label class="form-check-label" for="Dublin1">Dublin 1</label>
+						</div>
+						<div class="form-check form-switch">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								role="switch"
+								id="Dublin2"
+							/>
+							<label class="form-check-label" for="Dublin2">Dublin 2</label>
+						</div>
+						<div class="form-check form-switch">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								role="switch"
+								id="Dublin3"
+							/>
+							<label class="form-check-label" for="Dublin3">Dublin 3</label>
+						</div>
+						<div class="form-check form-switch">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								role="switch"
+								id="Dublin4"
+							/>
+							<label class="form-check-label" for="Dublin4">Dublin 4</label>
+						</div>
+					</div>
+				</div>
+				<div class="budget-slider col-6">
+					<h4>Budget</h4>
+					<div class="range">
+						<input type="range" class="form-range" id="customRange1" />
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="cards">
+
+		<div class="filter-cards">
 			<div class="card col-2">
 				<div class="row">
 					<ul class="d-flex align-items-center">
@@ -74,86 +317,87 @@
 							</div> -->
 			</div>
 		</div>
-		<div class="containers-lg">
-			<!-- <div class="row gap-1 mt-1 mx-1"> -->
-			<div class="row">
-				<div class="col-md-3 col-sm-6">
-					<div class="card">
-						<img
-							src="images/crimbo.jpg"
-							class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
-							alt="Christmas Market"
-						/>
-						<div class="card-body">
-							<h4 class="card-title">Winter solstice celebration</h4>
-							<p class="card-text">
-								A magical winter solstices celebration in the Glendalough
-								Valley, with a combination of storytelling, sound healing and
-								nature connection.
-							</p>
-							<div class="text-light text-center">
-								<button
-									type="button"
-									class="btn btn-primary text-light rounded-5"
-								>
-									View More
-								</button>
+		<div class="nearby-cards">
+			<div class="containers-lg">
+				<!-- <div class="row gap-1 mt-1 mx-1"> -->
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="card">
+							<img
+								src="images/crimbo.jpg"
+								class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+								alt="Christmas Market"
+							/>
+							<div class="card-body">
+								<h4 class="card-title">Winter solstice celebration</h4>
+								<p class="card-text">
+									A magical winter solstices celebration in the Glendalough
+									Valley, with a combination of storytelling, sound healing and
+									nature connection.
+								</p>
+								<div class="text-light text-center">
+									<button
+										type="button"
+										class="btn btn-primary text-light rounded-5"
+									>
+										View More
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="card">
-						<img
-							src="images/crimbo.jpg"
-							class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
-							alt="Christmas Market"
-						/>
-						<div class="card-body">
-							<h4 class="card-title">Winter solstice celebration</h4>
-							<p class="card-text">
-								A magical winter solstices celebration in the Glendalough
-								Valley, with a combination of storytelling, sound healing and
-								nature connection.
-							</p>
-							<div class="text-light text-center">
-								<button
-									type="button rounded-3"
-									class="btn btn-primary text-light rounded-5"
-								>
-									View More
-								</button>
+					<div class="col-md-3 col-sm-6">
+						<div class="card">
+							<img
+								src="images/crimbo.jpg"
+								class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+								alt="Christmas Market"
+							/>
+							<div class="card-body">
+								<h4 class="card-title">Winter solstice celebration</h4>
+								<p class="card-text">
+									A magical winter solstices celebration in the Glendalough
+									Valley, with a combination of storytelling, sound healing and
+									nature connection.
+								</p>
+								<div class="text-light text-center">
+									<button
+										type="button rounded-3"
+										class="btn btn-primary text-light rounded-5"
+									>
+										View More
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="card">
-						<img
-							src="images/crimbo.jpg"
-							class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
-							alt="Christmas Market"
-						/>
-						<div class="card-body">
-							<h4 class="card-title">Winter solstice celebration</h4>
-							<p class="card-text">
-								A magical winter solstices celebration in the Glendalough
-								Valley, with a combination of storytelling, sound healing and
-								nature connection.
-							</p>
-							<div class="text-light text-center">
-								<button
-									type="button rounded-3"
-									class="btn btn-primary text-light rounded-4"
-								>
-									View More
-								</button>
+					<div class="col-md-3 col-sm-6">
+						<div class="card">
+							<img
+								src="images/crimbo.jpg"
+								class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+								alt="Christmas Market"
+							/>
+							<div class="card-body">
+								<h4 class="card-title">Winter solstice celebration</h4>
+								<p class="card-text">
+									A magical winter solstices celebration in the Glendalough
+									Valley, with a combination of storytelling, sound healing and
+									nature connection.
+								</p>
+								<div class="text-light text-center">
+									<button
+										type="button rounded-3"
+										class="btn btn-primary text-light rounded-4"
+									>
+										View More
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<!-- <div class="card col-md-3 col-sm-6 shadow-sm">
+					<!-- <div class="card col-md-3 col-sm-6 shadow-sm">
 					<div class="card-event-image">
 						<img
 							src="images/crimbo.jpg"
@@ -176,6 +420,258 @@
 						</button>
 					</div>
 				</div> -->
+				</div>
+			</div>
+		</div>
+		<!-- .nearby-cards.row>.col>.featured>.row>.col.lg-3*4> -->
+		<div class="hot-cards mt-5">
+			<div class="row">
+				<div class="featured col-3 grow-1">
+					<h5>Our Picks</h5>
+					<div class="row object-fit">
+						<div class="col lg-3">
+							<div class="card">
+								<img
+									src="images/crimbo.jpg"
+									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									alt="Christmas Market"
+								/>
+								<div class="card-body">
+									<h4 class="card-title">Winter solstice celebration</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col lg-3">
+							<div class="card">
+								<img
+									src="images/crimbo.jpg"
+									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									alt="Christmas Market"
+								/>
+								<div class="card-body">
+									<h4 class="card-title">Winter solstice celebration</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col lg-3">
+							<div class="card">
+								<img
+									src="images/crimbo.jpg"
+									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									alt="Christmas Market"
+								/>
+								<div class="card-body">
+									<h4 class="card-title">Winter solstice celebration</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col lg-3">
+							<div class="card">
+								<img
+									src="images/crimbo.jpg"
+									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									alt="Christmas Market"
+								/>
+								<div class="card-body">
+									<h4 class="card-title">Winter solstice celebration</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="nearby-section col-9">
+					<div class="row">
+						<div class="col-3">
+							<div class="card">
+								<img
+									src="images/crimbo.jpg"
+									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									alt="Christmas Market"
+								/>
+								<div class="card-body">
+									<h4 class="card-title">Winter solstice celebration</h4>
+									<p class="card-text flex-">
+										A magical winter solstices celebration in the Glendalough
+										Valley, with a combination of storytelling, sound healing
+										and nature connection.
+									</p>
+									<div class="text-light text-center">
+										<button
+											type="button"
+											class="btn btn-primary text-light rounded-5"
+										>
+											View More
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="card">
+								<img
+									src="images/crimbo.jpg"
+									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									alt="Christmas Market"
+								/>
+								<div class="card-body">
+									<h4 class="card-title">Winter solstice celebration</h4>
+									<p class="card-text flex-">
+										A magical winter solstices celebration in the Glendalough
+										Valley, with a combination of storytelling, sound healing
+										and nature connection.
+									</p>
+									<div class="text-light text-center">
+										<button
+											type="button"
+											class="btn btn-primary text-light rounded-5"
+										>
+											View More
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="card">
+								<img
+									src="images/crimbo.jpg"
+									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									alt="Christmas Market"
+								/>
+								<div class="card-body">
+									<h4 class="card-title">Winter solstice celebration</h4>
+									<p class="card-text flex-">
+										A magical winter solstices celebration in the Glendalough
+										Valley, with a combination of storytelling, sound healing
+										and nature connection.
+									</p>
+									<div class="text-light text-center">
+										<button
+											type="button"
+											class="btn btn-primary text-light rounded-5"
+										>
+											View More
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="card">
+								<img
+									src="images/crimbo.jpg"
+									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									alt="Christmas Market"
+								/>
+								<div class="card-body">
+									<h4 class="card-title">Winter solstice celebration</h4>
+									<p class="card-text flex-">
+										A magical winter solstices celebration in the Glendalough
+										Valley, with a combination of storytelling, sound healing
+										and nature connection.
+									</p>
+									<div class="text-light text-center">
+										<button
+											type="button"
+											class="btn btn-primary text-light rounded-5"
+										>
+											View More
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="card">
+								<img
+									src="images/crimbo.jpg"
+									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									alt="Christmas Market"
+								/>
+								<div class="card-body">
+									<h4 class="card-title">Winter solstice celebration</h4>
+									<p class="card-text flex-">
+										A magical winter solstices celebration in the Glendalough
+										Valley, with a combination of storytelling, sound healing
+										and nature connection.
+									</p>
+									<div class="text-light text-center">
+										<button
+											type="button"
+											class="btn btn-primary text-light rounded-5"
+										>
+											View More
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="card">
+								<img
+									src="images/crimbo.jpg"
+									class="card-img-top img-fluid w-100 rounded-2 shadow-sm card-img-top"
+									alt="Christmas Market"
+								/>
+								<div class="card-body">
+									<h4 class="card-title">Winter solstice celebration</h4>
+									<p class="card-text flex-">
+										A magical winter solstices celebration in the Glendalough
+										Valley, with a combination of storytelling, sound healing
+										and nature connection.
+									</p>
+									<div class="text-light text-center">
+										<button
+											type="button"
+											class="btn btn-primary text-light rounded-5"
+										>
+											View More
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer bg-dark text-light">
+			<div class="row px-1">
+				<div class="col-3">
+					<h5>About us</h5>
+					<ul>
+						<li>Who we are</li>
+						<li>How to use</li>
+						<li>FAQs</li>
+						<li>Sitemap</li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<h5>Our Website</h5>
+					<ul>
+						<li>Find local events</li>
+						<li>Going on holiday? plan by city here</li>
+						<li>Online e-ticketing</li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<h5>Popular cities</h5>
+					<ul>
+						<li>Dublin Events</li>
+						<li>Galway Events</li>
+						<li>Cork Events</li>
+						<li>Limerick Events</li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<h5>Contact us</h5>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>Live chat assistance</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</body>

@@ -23,6 +23,9 @@ $enable-negative-margins:     true;
 
 $custom-colours: (
     // "primary-blue": rgb(119,168,231),
+    "primary": rgb(119,168,231),
+    "secondary": rgb(113, 224, 211),
+    "light": rgb(252, 232, 232) ,
     "secondary-light": white,
 );
 
@@ -32,7 +35,7 @@ $custom-colours: (
 $theme-colors: map-merge($theme-colors, $custom-colours);
 
 //add key colour palette and classes
-@each $color, $val in $colors{
+@each $color, $val in $theme-colors{
     .bg-#{$color}{
       background-color: $val;
     }
