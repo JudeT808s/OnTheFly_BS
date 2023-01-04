@@ -12,9 +12,8 @@
 		<title>OnTheFly</title>
 	</head>
 	<body>
-		<div class="navbar navbar-expand-lg bg-primary">
+		<div class="navbar navbar-expand-lg bg-primary sticky-top">
 			<div class="container-fluid">
-				<a class="navbrar-brand text-light" href="#">OnTheFly </a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -24,35 +23,79 @@
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"> </span>
 				</button>
-				<div class="collapse navbar-collapse" id="nowExpand">
-					<ul class="navbar-nav gap-5">
-						<li class="nav-item">
-							<a class="text-light" href="#">Home</a>
-						</li>
-						<li>
-							<a class="text-light" href="#">On Tonight</a>
-						</li>
-						<li>
-							<a class="text-light" href="#">What's hot</a>
-						</li>
-					</ul>
+				<div class="row">
+					<div class="col-12">
+						<div class="collapse navbar-collapse" id="nowExpand">
+							<a
+								class="navbar-brand text-light d-flex justify-content-start"
+								href="#"
+								>OnTheFly
+							</a>
+
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link text-light" href="#">Home</a>
+								</li>
+								<li>
+									<a class="nav-link text-light" href="#">On Tonight</a>
+								</li>
+								<li>
+									<a class="nav-link text-light" href="#">What's hot</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Make Target class for search button to open search bar -->
+
+				<div class="collapse w-50" id="searchForm">
 					<form class="d-flex" role="search">
-						<input
-							class="form-control me-2"
-							type="search"
-							placeholder="Search"
-							aria-label="Search"
-						/>
-						<button class="btn btn-outline-success" type="submit">
-							Search
-						</button>
+						<div class="input-group align-items-md-center form-control">
+							<input
+								class="form-control me-2"
+								type="search"
+								placeholder="Search"
+								aria-label="Search"
+							/>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-toggle="collapse"
+								data-bs-target="#searchForm"
+							></button>
+						</div>
+						<div class="search-section">
+							<a
+								class="nav-link search"
+								href="#searchForm"
+								data-bs-toggle="collapse"
+								data-bs-target="#searchForm"
+							>
+							</a>
+						</div>
 					</form>
+					<a
+						class="nav-link d-flex justify-content-end"
+						href="#searchForm"
+						data-bs-target="#searchForm"
+						data-bs-toggle="collapse"
+					>
+						<div class="search-open-button d-flex">
+							<img
+								src="images/search.png"
+								alt="Search"
+								srcset=""
+								class="w-25"
+							/>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row px-5">
 			<h1 class="mt-5">Your Event</h1>
 
 			<div class="col-8">
@@ -199,19 +242,6 @@
 									</div>
 								</div>
 							</div>
-							<!-- <div class="location d-flex align-items-center">
-								<div class="col-3">
-									<img
-										src="images/map-pin-solid.svg"
-										alt=""
-										srcset=""
-										class="w-25"
-									/>
-								</div>
-								<div class="col-9">
-									<p class="text-wrap">Trinity Square, Dublin 1, Dublin</p>
-								</div>
-							</div> -->
 						</div>
 					</div>
 					<div class="col-6">
@@ -221,12 +251,28 @@
 						</div>
 					</div>
 				</div>
+				<div class="container mt-3">
+					<div class="row">
+						<div class="col-12">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+								dolore minima rerum, vel aperiam, laudantium fugiat velit
+								corporis exercitationem maiores ut accusantium pariatur nam
+								accusamus hic esse molestiae provident voluptatum fuga sapiente
+								cupiditate, tempore odit! Consequatur, quidem aspernatur quasi
+								assumenda quibusdam recusandae fugit facere similique iste!
+								Pariatur et deleniti, architecto distinctio officia doloribus
+								magni inventore in! Consectetur ad amet eos.
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="col-4">
 				<div class="card">
 					<div class="row">
 						<div class="card-img">
-							<img src="images/crimbo.jpg" alt="" srcset="" class="w-100" />
+							<img src="images/map.PNG" alt="" srcset="" class="w-100" />
 						</div>
 						<div class="card-title fw-bolder d-flex col-5">
 							<h3>How to get there</h3>
@@ -234,7 +280,21 @@
 						<!-- .card>.row>.col-4>img:s+.col-8>p -->
 						<div class="d-flex col-7 justify-content-center">
 							<div class="row">
-								<div class="cont d-flex align-items-center">
+								<div class="row g-0 d-flex align-items-md-center">
+									<div class="col-sm-2">
+										<div class="col-md-4">
+											<img
+												src="images/map-pin-solid.svg"
+												class="img-fluid"
+												alt="Map"
+											/>
+										</div>
+									</div>
+									<div class="col-md-8 flex-shrink-1">
+										<  class="card-title">Open in Google Maps</>
+									</div>
+								</div>
+								<!-- <div class="cont d-flex align-items-center">
 									<div class="col-3 d-flex">
 										<img
 											src="images/map-pin-solid.svg"
@@ -248,7 +308,7 @@
 											Open in Google Maps
 										</p>
 									</div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 						<div class="card-body">
@@ -302,81 +362,81 @@
 			</div>
 		</div>
 		<!-- bottom cards -->
-		<div class="row">
-			<div class="card col-md-4 mb-4" style="max-width: 540px">
-				<div class="row g-0">
+		<div class="row px-3 mt-2">
+			<div class="col-md-4 mb-4" style="max-width: 540px">
+				<div class="row px-2">
 					<div class="col-md-4">
 						<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
 					</div>
 					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">No more parties in LA</h5>
-							<p class="card-text">The best party in LA</p>
+						<div class="body">
+							<h5 class="title">No more parties in LA</h5>
+							<p class="text">The best party in LA</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="card mb-3 col-md-4" style="max-width: 540px">
-				<div class="row g-0">
+			<div class="mb-3 col-md-4" style="max-width: 540px">
+				<div class="row px-2">
 					<div class="col-md-4">
 						<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
 					</div>
 					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">No more parties in LA</h5>
-							<p class="card-text">The best party in LA</p>
+						<div class="body">
+							<h5 class="title">No more parties in LA</h5>
+							<p class="text">The best party in LA</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="card mb-3 col-md-4" style="max-width: 540px">
-				<div class="row g-0">
+			<div class="mb-3 col-md-4" style="max-width: 540px">
+				<div class="row px-2">
 					<div class="col-md-4">
 						<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
 					</div>
 					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">No more parties in LA</h5>
-							<p class="card-text">The best party in LA</p>
+						<div class="body">
+							<h5 class="title">No more parties in LA</h5>
+							<p class="text">The best party in LA</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="card col-md-4 mb-4" style="max-width: 540px">
-				<div class="row g-0">
+			<div class="col-md-4 mb-4" style="max-width: 540px">
+				<div class="row px-2">
 					<div class="col-md-4">
 						<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
 					</div>
 					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">No more parties in LA</h5>
-							<p class="card-text">The best party in LA</p>
+						<div class="body">
+							<h5 class="title">No more parties in LA</h5>
+							<p class="text">The best party in LA</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="card mb-3 col-md-4" style="max-width: 540px">
-				<div class="row g-0">
+			<div class="mb-3 col-md-4" style="max-width: 540px">
+				<div class="row px-2">
 					<div class="col-md-4">
 						<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
 					</div>
 					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">No more parties in LA</h5>
-							<p class="card-text">The best party in LA</p>
+						<div class="body">
+							<h5 class="title">No more parties in LA</h5>
+							<p class="text">The best party in LA</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="card mb-3 col-md-4" style="max-width: 540px">
-				<div class="row g-0">
+			<div class="mb-3 col-md-4" style="max-width: 540px">
+				<div class="row px-2">
 					<div class="col-md-4">
 						<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
 					</div>
 					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">No more parties in LA</h5>
-							<p class="card-text">The best party in LA</p>
+						<div class="body">
+							<h5 class="title">No more parties in LA</h5>
+							<p class="text">The best party in LA</p>
 						</div>
 					</div>
 				</div>
