@@ -90,18 +90,40 @@
 				</a>
 			</div>
 		</div>
-		<!-- Sidebar -->
-		<div class="sidebar">
-			<button
-				class="btn"
-				type="button"
-				data-bs-toggle="offcanvas"
-				data-bs-target="#offcanvas"
-				aria-controls="offcanvas"
-			>
-				test<img src="images/bus-solid.svg" alt="" srcset="" />
-			</button>
+		<!-- Background image start-->
+		<div
+			class="d-flex justify-content-center align-items-center bg-image"
+			style="
+				background-image: url('https://images.squarespace-cdn.com/content/v1/55c37beae4b0336075603f86/1443039469134-E9SLQBQ2OW1Y69KPKFDO/image-asset.jpeg?format=2500w');
+				height: 40vh;
+			"
+		>
+			<div class="mask mask-custom">
+				<h1 class="text-light fw-bold d-flex justify-content-center mb-5 mt-5">
+					Find your next favourite event
+				</h1>
+				<div class="next-line d-flex align-items-center justify-content-center">
+					<a
+						class="btn btn-secondary text-light d-flex align-items-center justify-content-center"
+						style="max-width: 200px"
+						href="index.html"
+						>Explore Now</a
+					>
+				</div>
+			</div>
 		</div>
+		<!-- Background image end -->
+		<!-- Sidebar -->
+
+		<button
+			class="btn"
+			type="button"
+			data-bs-toggle="offcanvas"
+			data-bs-target="#offcanvas"
+			aria-controls="offcanvas"
+		>
+			test<img src="images/bus-solid.svg" alt="" srcset="" />
+		</button>
 		<!-- Start of Sidebar -->
 		<div
 			class="offcanvas offcanvas-start"
@@ -312,15 +334,43 @@
 		<!-- Filter Cards -->
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-1">
+				<div class="col-sm-2">
 					<div class="container-sm bg-secondary rounded-3">
 						<div class="row g-0 d-flex align-items-md-center">
-							<div class="col-sm-4">
-								<div class="col-sm-4 bg-light rounded-circle">
+							<div class="col-6">
+								<div class="col-sm-4">
 									<img src="images/music.png" class="img-fluid" alt="Music" />
 								</div>
 							</div>
-							<div class="col-sm-6">
+							<div class="col-6">
+								<h5 class="card-title flex-shrink-1">Music</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="container-sm bg-secondary rounded-3">
+						<div class="row g-0 d-flex align-items-md-center">
+							<div class="col-6">
+								<div class="col-sm-4">
+									<img src="images/music.png" class="img-fluid" alt="Music" />
+								</div>
+							</div>
+							<div class="col-6">
+								<h5 class="card-title flex-shrink-1">Music</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="container-sm bg-secondary rounded-3">
+						<div class="row g-0 d-flex align-items-md-center">
+							<div class="col-6">
+								<div class="col-sm-4">
+									<img src="images/music.png" class="img-fluid" alt="Music" />
+								</div>
+							</div>
+							<div class="col-6">
 								<h5 class="card-title flex-shrink-1">Music</h5>
 							</div>
 						</div>
@@ -644,7 +694,7 @@
 						</li>
 						<li>
 							<a href="#" class="text-decoration-none"
-								>Going on holiday? plan by city here
+								>Going on holiday? Plan by city here
 							</a>
 						</li>
 						<li>
