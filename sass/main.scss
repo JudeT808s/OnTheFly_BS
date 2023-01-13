@@ -2,9 +2,6 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 //Custom colours
-
-
-
 $primary: rgb(119,168,231);
 $secondary: rgb(113, 224, 211);
 $light: rgb(252, 232, 232) ; 
@@ -28,6 +25,20 @@ $custom-colours: (
     "light": rgb(252, 232, 232) ,
     "secondary-light": white,
 );
+
+//Google Fonts
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,500;1,800&family=Trispace:wght@200;500;700;800&display=swap');
+
+//font override
+$font-family-base: Poppins, sans-serif;
+$display-font-weight: 500;
+
+$display-emphasis-font-family: Trispace, sans-serif;
+$display-emphasis-font-weight: 400;  
+.display-emphasis {
+    font-family: $display-emphasis-font-family;
+    font-weight: $display-emphasis-font-weight;
+}
 
 //Counter CSS
 .qty .count {
