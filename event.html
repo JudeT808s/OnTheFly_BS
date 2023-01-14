@@ -104,17 +104,18 @@
 			"
 		>
 			<div class="mask mask-custom">
-				<h1 class="text-light fw-bolder d-flex justify-content-center mb-5 mt-5 display-emphasis">
+				<h1
+					class="text-light fw-bolder d-flex justify-content-center mb-5 mt-5 display-emphasis"
+				>
 					Find your next favourite event
 				</h1>
 				<div class="next-line d-flex align-items-center justify-content-center">
-						<a
-							class="btn btn-secondary text-light d-flex align-items-center justify-content-center "
-							style="max-width: 200px"
-							href="index.html"
-							>Explore Now</a
-						>
-					</span>
+					<a
+						class="btn btn-secondary text-light d-flex align-items-center justify-content-center"
+						style="max-width: 200px"
+						href="index.html"
+						>Explore Now</a
+					>
 				</div>
 			</div>
 		</div>
@@ -247,37 +248,28 @@
 					<!-- .row>.col-6*2>h4+.row>.col-3>img:s+.col-9>p -->
 					<div class="container">
 						<div class="row">
-							<div class="col-lg-6 col-md-6">
+							<div class="col-lg-6 col-sm-6">
 								<div class="row">
 									<h4>Location</h4>
-
-									<div class="container-sm rounded-3">
-										<div class="row d-flex">
-											<div class="col-6">
-												<div class="icon img-fluid">
-													<img
-														src="images/map-pin-solid.svg"
-														alt="Music"
-														style="min-width: 5px; max-width: 20px"
-													/>
-												</div>
-											</div>
-											<div class="col-6">
-												<p>Trinity Square, Dublin 1, Dublin</p>
-											</div>
+									<div
+										class="container-sm rounded-3 d-flex gap-3 align-items-center justify-content-center"
+									>
+										<div class="icon img-fluid">
+											<img
+												src="images/map-pin-solid.svg"
+												alt="Music"
+												style="min-width: 20px; max-width: 40px"
+											/>
 										</div>
+										<p>Trinity Square, Dublin 1, Dublin</p>
 									</div>
 								</div>
 							</div>
 							<!-- Route End -->
 							<!-- Event Info start -->
-							<div class="col-6">
+							<div class="col-lg-6 col-sm-6">
 								<h4>Event Info</h4>
 
-								<!-- <div
-							class="icons d-flex justify-content-center align-items-center"
-							style="max-width: 50px"
-						> -->
 								<div class="icons d-flex justify-content-center">
 									<div class="icon img-fluid">
 										<img
@@ -348,38 +340,22 @@
 						<div class="card-img">
 							<img src="images/map.PNG" alt="" srcset="" class="w-100" />
 						</div>
-						<div class="container">
-							<div class="row">
-								<div class="card-title fw-bolder d-flex col-5">
-									<h3>How to get there</h3>
-								</div>
-								<!-- .card>.row>.col-4>img:s+.col-8>p -->
-								<div class="d-flex col-7 justify-content-center">
-									<div class="row">
-										<div class="input-group d-flex">
-											<a
-												class="btn btn-white text-dark rounded-5"
-												href="event.html"
-												role="button"
-											>
-												<div class="row g-0 d-flex align-items-center">
-													<div class="col-4">
-														<img
-															src="images/map-pin-solid.svg"
-															class="img-fluid rounded-top-5"
-															style="min-width: 5px; max-width: 20px"
-															alt="Map"
-														/>
-													</div>
-													<div class="col-8">
-														<h6>Open in Google Maps</h6>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div class="d-flex">
+							<h3>How to get there</h3>
+							<!-- .card>.row>.col-4>img:s+.col-8>p -->
+							<a
+								class="btn btn-white text-dark rounded-5 d-flex justify-content-center align-items-center"
+								href="event.html"
+								role="button"
+							>
+								<img
+									src="images/map-pin-solid.svg"
+									class="rounded-top-5"
+									style="min-width: 10px; max-width: 20px"
+									alt="Map"
+								/>
+								<p>Open in Google Maps</p>
+							</a>
 						</div>
 						<div class="card-body">
 							<div class="container">
@@ -393,37 +369,42 @@
 												style="max-width: 30px; min-width: 10px"
 											/>
 										</div>
+
 										<div class="card-body col-9">
 											<p class="fw-lighter">40-45 mins</p>
 											<h5>Get off at Mornington</h5>
 										</div>
 									</div>
-									<div class="d-flex align-items-center">
-										<div class="icon col-3">
-											<img
-												src="images/bus-solid.svg"
-												alt=""
-												srcset=""
-												style="max-width: 30px; min-width: 10px"
-											/>
-										</div>
-										<div class="card-body col-9">
-											<p class="fw-lighter">40-45 mins</p>
-											<h5>Get off at Mornington</h5>
+									<div class="collapse event-collapse" id="event2">
+										<div class="d-flex align-items-center">
+											<div class="icon col-3">
+												<img
+													src="images/bus-solid.svg"
+													alt=""
+													srcset=""
+													style="max-width: 30px; min-width: 10px"
+												/>
+											</div>
+											<div class="card-body col-9">
+												<p class="fw-lighter">40-45 mins</p>
+												<h5>Get off at Mornington</h5>
+											</div>
 										</div>
 									</div>
-									<div class="d-flex align-items-center">
-										<div class="icon col-3">
-											<img
-												src="images/bus-solid.svg"
-												alt=""
-												srcset=""
-												style="max-width: 30px; min-width: 10px"
-											/>
-										</div>
-										<div class="card-body col-9">
-											<p class="fw-lighter">40-45 mins</p>
-											<h5>Get off at Mornington</h5>
+									<div class="collapse event-collapse" id="event3">
+										<div class="d-flex align-items-center">
+											<div class="icon col-3">
+												<img
+													src="images/bus-solid.svg"
+													alt=""
+													srcset=""
+													style="max-width: 30px; min-width: 10px"
+												/>
+											</div>
+											<div class="card-body col-9">
+												<p class="fw-lighter">40-45 mins</p>
+												<h5>Get off at Mornington</h5>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -438,85 +419,191 @@
 			</div>
 		</div>
 		<!-- bottom cards -->
-		<div class="row px-3 mt-5">
-			<span class="display-emphasis">
-				<h3>Add more events to your trip</h3></span>
-			<div class="col-md-4 mb-4" style="max-width: 540px">
-				<span class="plus d-flex justify-content-end">+</span>
-				<div class="row px-2">
-					<div class="col-md-4">
-						<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
-					</div>
+		<div class="container-lg">
+			<div class="row px-3 mt-5">
+				<span class="display-emphasis">
+					<h3>Add more events to your trip</h3></span
+				>
+				<div class="col-md-4 mb-4" style="max-width: 540px">
+					<span class="d-flex justify-content-end pe-auto">
+						<div
+							class="event2-toggle"
+							data-bs-toggle="collapse"
+							data-bs-target="#event2"
+							aria-controls="event2"
+							aria-expanded="false"
+							aria-label="Toggle Event 2"
+						>
+							<img
+								src="images/plus.svg"
+								alt=""
+								srcset=""
+								style="min-width: 30px"
+							/>
+						</div>
+					</span>
+					<div class="row px-2">
+						<div class="col-md-4">
+							<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
+						</div>
 
-					<div class="col-md-8">
-						<div class="body">
-							<h5 class="title">No more parties in LA</h5>
-							<p class="text">The best party in LA</p>
+						<div class="col-md-8">
+							<div class="body">
+								<h5 class="title">No more parties in LA</h5>
+								<p class="text">The best party in LA</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="mb-3 col-md-4" style="max-width: 540px">
-				<div class="row px-2">
-					<div class="col-md-4">
-						<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
-					</div>
-					<div class="col-md-8">
-						<div class="body">
-							<h5 class="title">No more parties in LA</h5>
-							<p class="text">The best party in LA</p>
+				<div class="mb-3 col-md-4" style="max-width: 540px">
+					<span class="d-flex justify-content-end">
+						<div
+							class="event3-toggle pe-auto"
+							data-bs-toggle="collapse"
+							data-bs-target="#event3"
+							aria-controls="event3"
+							aria-expanded="false"
+							aria-label="Toggle Event 3"
+						>
+							<img
+								src="images/plus.svg"
+								alt=""
+								srcset=""
+								style="min-width: 30px"
+							/>
+						</div>
+					</span>
+					<div class="row px-2">
+						<div class="col-md-4">
+							<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
+						</div>
+						<div class="col-md-8">
+							<div class="body">
+								<h5 class="title">No more parties in LA</h5>
+								<p class="text">The best party in LA</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="mb-3 col-md-4" style="max-width: 540px">
-				<div class="row px-2">
-					<div class="col-md-4">
-						<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
-					</div>
-					<div class="col-md-8">
-						<div class="body">
-							<h5 class="title">No more parties in LA</h5>
-							<p class="text">The best party in LA</p>
+				<div class="col-md-4 mb-4" style="max-width: 540px">
+					<span class="d-flex justify-content-end pe-auto">
+						<div
+							class="event2-toggle"
+							data-bs-toggle="collapse"
+							data-bs-target="#event2"
+							aria-controls="event2"
+							aria-expanded="false"
+							aria-label="Toggle Event 2"
+						>
+							<img
+								src="images/plus.svg"
+								alt=""
+								srcset=""
+								style="min-width: 30px"
+							/>
+						</div>
+					</span>
+					<div class="row px-2">
+						<div class="col-md-4">
+							<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
+						</div>
+
+						<div class="col-md-8">
+							<div class="body">
+								<h5 class="title">No more parties in LA</h5>
+								<p class="text">The best party in LA</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-4 mb-4" style="max-width: 540px">
-				<div class="row px-2">
-					<div class="col-md-4">
-						<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
-					</div>
-					<div class="col-md-8">
-						<div class="body">
-							<h5 class="title">No more parties in LA</h5>
-							<p class="text">The best party in LA</p>
+				<div class="mb-3 col-md-4" style="max-width: 540px">
+					<span class="d-flex justify-content-end">
+						<div
+							class="event3-toggle pe-auto"
+							data-bs-toggle="collapse"
+							data-bs-target="#event3"
+							aria-controls="event3"
+							aria-expanded="false"
+							aria-label="Toggle Event 3"
+						>
+							<img
+								src="images/plus.svg"
+								alt=""
+								srcset=""
+								style="min-width: 30px"
+							/>
+						</div>
+					</span>
+					<div class="row px-2">
+						<div class="col-md-4">
+							<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
+						</div>
+						<div class="col-md-8">
+							<div class="body">
+								<h5 class="title">No more parties in LA</h5>
+								<p class="text">The best party in LA</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="mb-3 col-md-4" style="max-width: 540px">
-				<div class="row px-2">
-					<div class="col-md-4">
-						<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
-					</div>
-					<div class="col-md-8">
-						<div class="body">
-							<h5 class="title">No more parties in LA</h5>
-							<p class="text">The best party in LA</p>
+				<div class="col-md-4 mb-4" style="max-width: 540px">
+					<span class="d-flex justify-content-end pe-auto">
+						<div
+							class="event2-toggle"
+							data-bs-toggle="collapse"
+							data-bs-target="#event2"
+							aria-controls="event2"
+							aria-expanded="false"
+							aria-label="Toggle Event 2"
+						>
+							<img
+								src="images/plus.svg"
+								alt=""
+								srcset=""
+								style="min-width: 30px"
+							/>
+						</div>
+					</span>
+					<div class="row px-2">
+						<div class="col-md-4">
+							<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
+						</div>
+
+						<div class="col-md-8">
+							<div class="body">
+								<h5 class="title">No more parties in LA</h5>
+								<p class="text">The best party in LA</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="mb-3 col-md-4" style="max-width: 540px">
-				<div class="row px-2">
-					<div class="col-md-4">
-						<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
-					</div>
-					<div class="col-md-8">
-						<div class="body">
-							<h5 class="title">No more parties in LA</h5>
-							<p class="text">The best party in LA</p>
+				<div class="mb-3 col-md-4" style="max-width: 540px">
+					<span class="d-flex justify-content-end">
+						<div
+							class="event3-toggle pe-auto"
+							data-bs-toggle="collapse"
+							data-bs-target="#event3"
+							aria-controls="event3"
+							aria-expanded="false"
+							aria-label="Toggle Event 3"
+						>
+							<img
+								src="images/plus.svg"
+								alt=""
+								srcset=""
+								style="min-width: 30px"
+							/>
+						</div>
+					</span>
+					<div class="row px-2">
+						<div class="col-md-4">
+							<img src="images/event.jpg" class="img-fluid h-100" alt="event" />
+						</div>
+						<div class="col-md-8">
+							<div class="body">
+								<h5 class="title">No more parties in LA</h5>
+								<p class="text">The best party in LA</p>
+							</div>
 						</div>
 					</div>
 				</div>

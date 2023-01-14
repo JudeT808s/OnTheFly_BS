@@ -79,13 +79,19 @@
 					</form>
 				</div>
 				<a
-					class="nav-link d-flex justify-content-end"
+					class="nav-link d-flex justify-content-end #searchForm"
 					href="#searchForm"
+					aria-expanded="false"
 					data-bs-target="#searchForm"
 					data-bs-toggle="collapse"
 				>
-					<div class="search-open-button d-flex">
-						<img src="images/search.png" alt="Search" srcset="" class="w-25" />
+					<div class="search-open-button d-flex #searchForm">
+						<img
+							src="images/search.png"
+							alt="Search"
+							srcset=""
+							style="max-width: 30px"
+						/>
 					</div>
 				</a>
 			</div>
@@ -134,7 +140,7 @@
 			aria-labelledby="sidebarLabel"
 		>
 			<div class="sidebar-header d-flex">
-				<h5 class="sidebar-title" id="sidebarLabel">sidebar</h5>
+				<h5 class="sidebar-title" id="sidebarLabel"></h5>
 				<div class="close d-flex justify-content-end">
 					<button
 						type="button"
@@ -145,13 +151,13 @@
 				</div>
 			</div>
 			<div class="sidebar-body">
-				<h3>Events</h3>
+				<span class="display-emphasis"><h3>Events</h3></span>
 				<ul class="list-unstyled">
-					<li>View All</li>
-					<li>Live</li>
-					<li>Music</li>
-					<li>Sport</li>
-					<li>Family Friendly</li>
+					<li><a href="#">View All</a></li>
+					<li><a href="#">Live</a></li>
+					<li><a href="#">Music</a></li>
+					<li><a href="#">Sport</a></li>
+					<li><a href="#">Family Friendly</a></li>
 				</ul>
 				<div class="cuisine dropdown mt-3">
 					<button
@@ -334,48 +340,110 @@
 		</div>
 		<!-- End of sidebar -->
 		<!-- Filter Cards -->
-		<div class="container-fluid">
+		<div class="container-lg">
 			<div class="row align-items-center justify-content-center">
-				<div class="col-sm-2">
-					<div class="container-sm bg-secondary rounded-3">
-						<div class="row g-0 d-flex align-items-md-center">
-							<div class="col-6">
-								<div class="col-sm-4">
-									<img src="images/music.png" class="img-fluid" alt="Music" />
-								</div>
-							</div>
-							<div class="col-6">
-								<h5 class="card-title flex-shrink-1">Music</h5>
-							</div>
-						</div>
+				<div class="col-3">
+					<div
+						class="bg-secondary rounded-3 d-flex align-items-center gap-1 mb-2 btn"
+					>
+						<img
+							src="images/music.png"
+							class="img-fluid"
+							alt="Music"
+							style="max-width: 35px"
+						/>
+						<h5 class="card-title">Music</h5>
 					</div>
 				</div>
-				<div class="col-sm-2">
-					<div class="container-sm bg-secondary rounded-3">
-						<div class="row g-0 d-flex align-items-md-center">
-							<div class="col-9">
-								<div class="col-sm-4">
-									<img src="images/music.png" class="img-fluid" alt="Music" />
-								</div>
-							</div>
-							<div class="col-3">
-								<h5 class="card-title flex-shrink-1">Music</h5>
-							</div>
-						</div>
+				<div class="col-3">
+					<div
+						class="bg-secondary rounded-3 d-flex align-items-center gap-1 mb-2 btn"
+					>
+						<img
+							src="images/drink.svg"
+							class="img-fluid"
+							alt="Drinking glass"
+							style="max-width: 35px"
+						/>
+						<h5 class="card-title">Food & Drink</h5>
 					</div>
 				</div>
-				<div class="col-sm-2">
-					<div class="container-sm bg-secondary rounded-3">
-						<div class="row g-0 d-flex align-items-md-center">
-							<div class="col-6">
-								<div class="col-sm-4">
-									<img src="images/music.png" class="img-fluid" alt="Music" />
-								</div>
-							</div>
-							<div class="col-6">
-								<h5 class="card-title flex-shrink-1">Music</h5>
-							</div>
-						</div>
+				<div class="col-3">
+					<div
+						class="bg-secondary rounded-3 d-flex align-items-center gap-1 mb-2 btn"
+					>
+						<img
+							src="images/sport.svg"
+							class="img-fluid"
+							alt="Sport"
+							style="max-width: 35px"
+						/>
+						<h5 class="card-title">Sport</h5>
+					</div>
+				</div>
+				<div class="col-3">
+					<div
+						class="bg-secondary rounded-3 d-flex align-items-center gap-1 mb-2 btn"
+					>
+						<img
+							src="images/mask.svg"
+							class="img-fluid"
+							alt="Arts"
+							style="max-width: 35px"
+						/>
+						<h5 class="card-title">Visual Arts</h5>
+					</div>
+				</div>
+				<div class="col-3">
+					<div
+						class="bg-secondary rounded-3 d-flex align-items-center gap-1 mb-2 btn"
+					>
+						<img
+							src="images/game.svg"
+							class="img-fluid"
+							alt="Gaming"
+							style="max-width: 35px"
+						/>
+						<h5 class="card-title">Gaming</h5>
+					</div>
+				</div>
+				<div class="col-3">
+					<div
+						class="bg-secondary rounded-3 d-flex align-items-center gap-1 mb-2 btn"
+					>
+						<img
+							src="images/friend.svg"
+							class="img-fluid"
+							alt="Drinking glass"
+							style="max-width: 35px"
+						/>
+						<h5 class="card-title">Social</h5>
+					</div>
+				</div>
+				<div class="col-3">
+					<div
+						class="bg-secondary rounded-3 d-flex align-items-center gap-1 mb-2 btn"
+					>
+						<img
+							src="images/charity.svg"
+							class="img-fluid"
+							alt="Free"
+							style="max-width: 35px"
+						/>
+						<h5 class="card-title">Free</h5>
+					</div>
+				</div>
+				<div class="col-3">
+					<div
+						class="bg-secondary rounded-3 d-flex align-items-center gap-1 mb-2 btn"
+					>
+						<img
+							src="images/education.svg"
+							class="img-fluid"
+							alt="Educational"
+							style="max-width: 35px"
+						/>
+						<h5 class="card-title">Educational</h5>
 					</div>
 				</div>
 			</div>
