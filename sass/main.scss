@@ -1,4 +1,5 @@
 //Import Functions
+
 @import "../node_modules/bootstrap/scss/functions";
 
 //Custom colours
@@ -7,9 +8,9 @@ $secondary: rgb(113, 224, 211);
 $light: rgb(252, 232, 232) ; 
 
 //Variables and Mixins
-
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
+
 
 //Globals
 $enable-shadows:              true;
@@ -22,12 +23,13 @@ $custom-colours: (
     // "primary-blue": rgb(119,168,231),
     "primary": rgb(119,168,231),
     "secondary": rgb(113, 224, 211),
+    "accent":(rgb(240, 85, 55)),
     "light": rgb(252, 232, 232) ,
     "secondary-light": white,
 );
 
 //Google Fonts
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,500;1,800&family=Trispace:wght@200;500;700;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,500;1,800&family=Trispace:wght@200;300;500;700;800&display=swap');
 
 //font override
 $font-family-base: Poppins, sans-serif;
@@ -39,6 +41,8 @@ $display-emphasis-font-weight: 400;
     font-family: $display-emphasis-font-family;
     font-weight: $display-emphasis-font-weight;
 }
+
+
 
 //Counter CSS
 .qty .count {
@@ -94,7 +98,7 @@ input{
   border: 0;
   width: 2%;
 }
-nput::-webkit-outer-spin-button,
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
@@ -102,7 +106,8 @@ input::-webkit-inner-spin-button {
 input:disabled{
   background-color:white;
 }
-       
+
+
 //Mask Custom
 .bg-image{
   position: relative;
@@ -148,9 +153,22 @@ $theme-colors: map-merge($theme-colors, $custom-colours);
   .text-#{$color}-dark {
     color: shade-color($val, 10%);
   }
-
-  
 }
+
+
+
+// $card: map-merge($card, $card-custom);
+
+
+// // @each  $val in $card{
+// // .card-lg{
+ 
+// //   min-height: 490px;
+// //   }
+  
+// // }
+
+
 
 //Align
 
@@ -213,3 +231,10 @@ $spacers: (
 ) !default;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.card-lg{
+  @extend .card;
+  min-height: 490px;
+
+}
+
