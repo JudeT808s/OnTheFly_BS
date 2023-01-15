@@ -249,7 +249,8 @@ $spacers: (
   border: none !important;
   box-shadow:   0 .75rem 1.5rem rgba($black, .25) !important;
   border-radius: 1rem;
-  margin-bottom: 0.65rem
+  margin-bottom: 0.65rem;
+  position: relative;
 }
 .card-lg{
   @extend .card;
@@ -263,5 +264,11 @@ $spacers: (
   background-image: none !important;
   border-radius: 0 !important;
   box-shadow: none !important;
+}
+.btn-ab{
+  @extend .btn;
+  position: absolute;
+  bottom: 3%;
+  left: 25%;
 }
 

@@ -2731,7 +2731,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .btn-check[disabled] + .btn-invis, .btn-check:disabled + .btn, .btn-check:disabled + .btn-invis {
+.btn-check[disabled] + .btn, .btn-check[disabled] + .btn-ab, .btn-check[disabled] + .btn-invis, .btn-check:disabled + .btn, .btn-check:disabled + .btn-ab, .btn-check:disabled + .btn-invis {
   pointer-events: none;
   filter: none;
   opacity: 0.65;
@@ -2915,11 +2915,11 @@ textarea.form-control-lg {
 .input-group > .form-floating:focus-within {
   z-index: 5;
 }
-.input-group .btn, .input-group .btn-invis {
+.input-group .btn, .input-group .btn-ab, .input-group .btn-invis {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus, .input-group .btn-invis:focus {
+.input-group .btn:focus, .input-group .btn-ab:focus, .input-group .btn-invis:focus {
   z-index: 5;
 }
 
@@ -2942,6 +2942,7 @@ textarea.form-control-lg {
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn,
+.input-group-lg > .btn-ab,
 .input-group-lg > .btn-invis {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
@@ -2952,6 +2953,7 @@ textarea.form-control-lg {
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn,
+.input-group-sm > .btn-ab,
 .input-group-sm > .btn-invis {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
@@ -3168,7 +3170,7 @@ textarea.form-control-lg {
   z-index: 4;
 }
 
-.btn, .btn-invis {
+.btn, .btn-ab, .btn-invis {
   --bs-btn-padding-x: 3rem;
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-font-family: ;
@@ -3203,21 +3205,21 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, .btn-invis {
+  .btn, .btn-ab, .btn-invis {
     transition: none;
   }
 }
-.btn:hover, .btn-invis:hover {
+.btn:hover, .btn-ab:hover, .btn-invis:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
 }
-.btn-check + .btn:hover, .btn-check + .btn-invis:hover {
+.btn-check + .btn:hover, .btn-check + .btn-ab:hover, .btn-check + .btn-invis:hover {
   color: var(--bs-btn-color);
   background-color: var(--bs-btn-bg);
   border-color: var(--bs-btn-border-color);
 }
-.btn:focus-visible, .btn-invis:focus-visible {
+.btn:focus-visible, .btn-ab:focus-visible, .btn-invis:focus-visible {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   background-image: var(--bs-gradient);
@@ -3225,22 +3227,22 @@ textarea.form-control-lg {
   outline: 0;
   box-shadow: var(--bs-btn-box-shadow), var(--bs-btn-focus-box-shadow);
 }
-.btn-check:focus-visible + .btn, .btn-check:focus-visible + .btn-invis {
+.btn-check:focus-visible + .btn, .btn-check:focus-visible + .btn-ab, .btn-check:focus-visible + .btn-invis {
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-box-shadow), var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked + .btn, .btn-check:checked + .btn-invis, :not(.btn-check) + .btn:active, :not(.btn-check) + .btn-invis:active, .btn:first-child:active, .btn-invis:first-child:active, .btn.active, .active.btn-invis, .btn.show, .show.btn-invis {
+.btn-check:checked + .btn, .btn-check:checked + .btn-ab, .btn-check:checked + .btn-invis, :not(.btn-check) + .btn:active, :not(.btn-check) + .btn-ab:active, :not(.btn-check) + .btn-invis:active, .btn:first-child:active, .btn-ab:first-child:active, .btn-invis:first-child:active, .btn.active, .active.btn-ab, .active.btn-invis, .btn.show, .show.btn-ab, .show.btn-invis {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   background-image: none;
   border-color: var(--bs-btn-active-border-color);
   box-shadow: var(--bs-btn-active-shadow);
 }
-.btn-check:checked + .btn:focus-visible, .btn-check:checked + .btn-invis:focus-visible, :not(.btn-check) + .btn:active:focus-visible, :not(.btn-check) + .btn-invis:active:focus-visible, .btn:first-child:active:focus-visible, .btn-invis:first-child:active:focus-visible, .btn.active:focus-visible, .active.btn-invis:focus-visible, .btn.show:focus-visible, .show.btn-invis:focus-visible {
+.btn-check:checked + .btn:focus-visible, .btn-check:checked + .btn-ab:focus-visible, .btn-check:checked + .btn-invis:focus-visible, :not(.btn-check) + .btn:active:focus-visible, :not(.btn-check) + .btn-ab:active:focus-visible, :not(.btn-check) + .btn-invis:active:focus-visible, .btn:first-child:active:focus-visible, .btn-ab:first-child:active:focus-visible, .btn-invis:first-child:active:focus-visible, .btn.active:focus-visible, .active.btn-ab:focus-visible, .active.btn-invis:focus-visible, .btn.show:focus-visible, .show.btn-ab:focus-visible, .show.btn-invis:focus-visible {
   box-shadow: var(--bs-btn-active-shadow), var(--bs-btn-focus-box-shadow);
 }
-.btn:disabled, .btn-invis:disabled, .btn.disabled, .disabled.btn-invis, fieldset:disabled .btn, fieldset:disabled .btn-invis {
+.btn:disabled, .btn-ab:disabled, .btn-invis:disabled, .btn.disabled, .disabled.btn-ab, .disabled.btn-invis, fieldset:disabled .btn, fieldset:disabled .btn-ab, fieldset:disabled .btn-invis {
   color: var(--bs-btn-disabled-color);
   pointer-events: none;
   background-color: var(--bs-btn-disabled-bg);
@@ -3817,14 +3819,14 @@ textarea.form-control-lg {
   color: var(--bs-btn-hover-color);
 }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-invis {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-ab, .btn-group-lg > .btn-invis {
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-padding-x: 1rem;
   --bs-btn-font-size: 1.25rem;
   --bs-btn-border-radius: 0.5rem;
 }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn-invis {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn-ab, .btn-group-sm > .btn-invis {
   --bs-btn-padding-y: 0.25rem;
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.875rem;
@@ -4193,34 +4195,46 @@ textarea.form-control-lg {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .btn-group > .btn-invis,
+.btn-group > .btn, .btn-group > .btn-ab, .btn-group > .btn-invis,
 .btn-group-vertical > .btn,
+.btn-group-vertical > .btn-ab,
 .btn-group-vertical > .btn-invis {
   position: relative;
   flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .btn-invis,
+.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .btn-ab, .btn-group > .btn-check:checked + .btn-invis,
 .btn-group > .btn-check:focus + .btn,
+.btn-group > .btn-check:focus + .btn-ab,
 .btn-group > .btn-check:focus + .btn-invis,
 .btn-group > .btn:hover,
+.btn-group > .btn-ab:hover,
 .btn-group > .btn-invis:hover,
 .btn-group > .btn:focus,
+.btn-group > .btn-ab:focus,
 .btn-group > .btn-invis:focus,
 .btn-group > .btn:active,
+.btn-group > .btn-ab:active,
 .btn-group > .btn-invis:active,
 .btn-group > .btn.active,
+.btn-group > .active.btn-ab,
 .btn-group > .active.btn-invis,
 .btn-group-vertical > .btn-check:checked + .btn,
+.btn-group-vertical > .btn-check:checked + .btn-ab,
 .btn-group-vertical > .btn-check:checked + .btn-invis,
 .btn-group-vertical > .btn-check:focus + .btn,
+.btn-group-vertical > .btn-check:focus + .btn-ab,
 .btn-group-vertical > .btn-check:focus + .btn-invis,
 .btn-group-vertical > .btn:hover,
+.btn-group-vertical > .btn-ab:hover,
 .btn-group-vertical > .btn-invis:hover,
 .btn-group-vertical > .btn:focus,
+.btn-group-vertical > .btn-ab:focus,
 .btn-group-vertical > .btn-invis:focus,
 .btn-group-vertical > .btn:active,
+.btn-group-vertical > .btn-ab:active,
 .btn-group-vertical > .btn-invis:active,
 .btn-group-vertical > .btn.active,
+.btn-group-vertical > .active.btn-ab,
 .btn-group-vertical > .active.btn-invis {
   z-index: 1;
 }
@@ -4237,22 +4251,26 @@ textarea.form-control-lg {
 .btn-group {
   border-radius: 0.375rem;
 }
-.btn-group > :not(.btn-check:first-child) + .btn, .btn-group > :not(.btn-check:first-child) + .btn-invis,
+.btn-group > :not(.btn-check:first-child) + .btn, .btn-group > :not(.btn-check:first-child) + .btn-ab, .btn-group > :not(.btn-check:first-child) + .btn-invis,
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px;
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-invis:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-ab:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-invis:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn.dropdown-toggle-split:first-child,
+.btn-group > .dropdown-toggle-split.btn-ab:first-child,
 .btn-group > .dropdown-toggle-split.btn-invis:first-child,
 .btn-group > .btn-group:not(:last-child) > .btn,
+.btn-group > .btn-group:not(:last-child) > .btn-ab,
 .btn-group > .btn-group:not(:last-child) > .btn-invis {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:nth-child(n+3), .btn-group > .btn-invis:nth-child(n+3),
+.btn-group > .btn:nth-child(n+3), .btn-group > .btn-ab:nth-child(n+3), .btn-group > .btn-invis:nth-child(n+3),
 .btn-group > :not(.btn-check) + .btn,
+.btn-group > :not(.btn-check) + .btn-ab,
 .btn-group > :not(.btn-check) + .btn-invis,
 .btn-group > .btn-group:not(:first-child) > .btn,
+.btn-group > .btn-group:not(:first-child) > .btn-ab,
 .btn-group > .btn-group:not(:first-child) > .btn-invis {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -4269,12 +4287,12 @@ textarea.form-control-lg {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .btn-invis + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .btn-ab + .dropdown-toggle-split, .btn-group-sm > .btn-invis + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .btn-invis + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .btn-ab + .dropdown-toggle-split, .btn-group-lg > .btn-invis + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -4291,22 +4309,24 @@ textarea.form-control-lg {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical > .btn, .btn-group-vertical > .btn-invis,
+.btn-group-vertical > .btn, .btn-group-vertical > .btn-ab, .btn-group-vertical > .btn-invis,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .btn-invis:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .btn-ab:not(:first-child), .btn-group-vertical > .btn-invis:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: -1px;
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-invis:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-ab:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-invis:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
+.btn-group-vertical > .btn-group:not(:last-child) > .btn-ab,
 .btn-group-vertical > .btn-group:not(:last-child) > .btn-invis {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .btn-invis ~ .btn, .btn-group-vertical > .btn ~ .btn-invis, .btn-group-vertical > .btn-invis ~ .btn-invis,
+.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .btn-ab ~ .btn, .btn-group-vertical > .btn ~ .btn-ab, .btn-group-vertical > .btn-ab ~ .btn-ab, .btn-group-vertical > .btn-invis ~ .btn, .btn-group-vertical > .btn-invis ~ .btn-ab, .btn-group-vertical > .btn ~ .btn-invis, .btn-group-vertical > .btn-ab ~ .btn-invis, .btn-group-vertical > .btn-invis ~ .btn-invis,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn,
+.btn-group-vertical > .btn-group:not(:first-child) > .btn-ab,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn-invis {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -5334,7 +5354,7 @@ textarea.form-control-lg {
   display: none;
 }
 
-.btn .badge, .btn-invis .badge {
+.btn .badge, .btn-ab .badge, .btn-invis .badge {
   position: relative;
   top: -1px;
 }
@@ -7535,7 +7555,7 @@ textarea.form-control-lg {
   background-color: currentcolor;
   opacity: 0.5;
 }
-.placeholder.btn::before, .placeholder.btn-invis::before {
+.placeholder.btn::before, .placeholder.btn-ab::before, .placeholder.btn-invis::before {
   display: inline-block;
   content: "";
 }
@@ -12688,6 +12708,7 @@ textarea.form-control-lg {
   box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.25) !important;
   border-radius: 1rem;
   margin-bottom: 0.65rem;
+  position: relative;
 }
 
 .card-lg {
@@ -12700,4 +12721,10 @@ textarea.form-control-lg {
   background-image: none !important;
   border-radius: 0 !important;
   box-shadow: none !important;
+}
+
+.btn-ab {
+  position: absolute;
+  bottom: 3%;
+  left: 25%;
 }/*# sourceMappingURL=main.css.map */
