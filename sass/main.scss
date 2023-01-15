@@ -23,9 +23,17 @@ $custom-colours: (
     // "primary-blue": rgb(119,168,231),
     "primary": rgb(119,168,231),
     "secondary": rgb(113, 224, 211),
-    "accent":(rgb(240, 85, 55)),
+    "accent":rgb(240, 85, 55),
     "light": rgb(252, 232, 232) ,
-    "secondary-light": white,
+    "grey": rgba(236, 228, 228, 0.925),
+    "music": rgba(254,74,73),
+    "sport": rgba(35,240,92),
+    "culture": rgba(143,0,255),
+    "education": rgba(219,153,71),
+    "food": rgba(234,170,0),
+    "game":rgb(243, 0, 223),
+
+
 );
 
 //Google Fonts
@@ -47,46 +55,45 @@ $display-emphasis-font-weight: 400;
 //Counter CSS
 .qty .count {
   color: #000;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 25px;
   font-weight: 700;
   line-height: 30px;
-  padding: 0 2px
-  ;min-width: 35px;
+  display: inline-block;
+  font-size: 25px;
+  padding: 0 2px;
+  min-width: 35px;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 .qty .plus {
-  cursor: pointer;
-  display: inline-block;
-  vertical-align: top;
   color: white;
-  width: 30px;
   height: 30px;
-  font: 30px/1 Arial,sans-serif;
+  width: 30px;
+  display: inline-block;
   text-align: center;
   border-radius: 50%;
+  vertical-align: top;
+  cursor: pointer;
   }
 .qty .minus {
-  cursor: pointer;
-  display: inline-block;
-  vertical-align: top;
   color: white;
   width: 30px;
   height: 30px;
-  font: 30px/1 Arial,sans-serif;
   text-align: center;
+  display: inline-block;
   border-radius: 50%;
+  vertical-align: top;
   background-clip: padding-box;
+  cursor: pointer;
 }
-div {
-  text-align: center;
+.add{
+  cursor: pointer;
 }
 .minus:hover{
-  background-color: #717fe0 !important;
+  background-color: #7483e2 !important;
 }
 .plus:hover{
-  background-color: #717fe0 !important;
+  background-color: #7483e2 !important;
 }
 /*Prevent text selection*/
 // span{
@@ -127,6 +134,11 @@ input:disabled{
 .mask-custom{
   backdrop-filter: blur(4px);
   background-color: rgba(0,0,0,0.1);
+}
+
+//Make Google Maps button fit in one line
+.fit{
+  font-size: 0.8em
 }
 //Merge colours
 $theme-colors: map-merge($theme-colors, $custom-colours);
@@ -232,9 +244,24 @@ $spacers: (
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+.card{
+  @extend .card;
+  border: none !important;
+  box-shadow:   0 .75rem 1.5rem rgba($black, .25) !important;
+  border-radius: 1rem;
+  margin-bottom: 0.65rem
+}
 .card-lg{
   @extend .card;
   min-height: 490px;
 
+}
+.btn-invis{
+  @extend .btn; 
+  padding: 0 !important;
+  border: 0 !important;
+  background-image: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 

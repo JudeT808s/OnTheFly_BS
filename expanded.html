@@ -41,7 +41,7 @@
 
 								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 									<li class="nav-item">
-										<a class="nav-link text-light" href="#">Home</a>
+										<a class="nav-link text-light" href="index.html">Home</a>
 									</li>
 									<li>
 										<a class="nav-link text-light" href="#">On Tonight</a>
@@ -58,7 +58,7 @@
 
 					<div class="collapse w-50" id="searchForm">
 						<form class="d-flex" role="search">
-							<div class="input-group align-items-md-center form-control">
+							<div class="input-group align-items-md-center">
 								<input
 									class="form-control me-2"
 									type="search"
@@ -67,9 +67,10 @@
 								/>
 								<button
 									type="button"
-									class="btn-close"
+									class="btn-close bg-light rounded-3"
 									data-bs-toggle="collapse"
 									data-bs-target="#searchForm"
+									style="height: 24px"
 								></button>
 							</div>
 							<div class="search-section">
@@ -82,22 +83,23 @@
 								</a>
 							</div>
 						</form>
-						<a
-							class="nav-link d-flex justify-content-end"
-							href="#searchForm"
-							data-bs-target="#searchForm"
-							data-bs-toggle="collapse"
-						>
-							<div class="search-open-button d-flex">
-								<img
-									src="images/search.png"
-									alt="Search"
-									srcset=""
-									class="w-25"
-								/>
-							</div>
-						</a>
 					</div>
+					<a
+						class="nav-link d-flex justify-content-end #searchForm"
+						href="#searchForm"
+						aria-expanded="false"
+						data-bs-target="#searchForm"
+						data-bs-toggle="collapse"
+					>
+						<div class="search-open-button d-flex #searchForm">
+							<img
+								src="images/search.png"
+								alt="Search"
+								srcset=""
+								style="max-width: 30px"
+							/>
+						</div>
+					</a>
 				</div>
 			</div>
 			<div class="container py-5">
@@ -194,7 +196,8 @@
 					<!-- How to get there start -->
 					<div class="col-lg-6">
 						<span class="display-emphasis">
-							<h1>Kid Cudi Adventure Land</h1></span>
+							<h1>Kid Cudi Adventure Land</h1></span
+						>
 						<p class="fw-light">
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 							Molestias, dicta.

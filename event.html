@@ -36,7 +36,7 @@
 
 							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 								<li class="nav-item">
-									<a class="nav-link text-light" href="#">Home</a>
+									<a class="nav-link text-light" href="index.html">Home</a>
 								</li>
 								<li>
 									<a class="nav-link text-light" href="#">On Tonight</a>
@@ -53,7 +53,7 @@
 
 				<div class="collapse w-50" id="searchForm">
 					<form class="d-flex" role="search">
-						<div class="input-group align-items-md-center form-control">
+						<div class="input-group align-items-md-center">
 							<input
 								class="form-control me-2"
 								type="search"
@@ -62,9 +62,10 @@
 							/>
 							<button
 								type="button"
-								class="btn-close"
+								class="btn-close bg-light rounded-3"
 								data-bs-toggle="collapse"
 								data-bs-target="#searchForm"
+								style="height: 24px"
 							></button>
 						</div>
 						<div class="search-section">
@@ -77,22 +78,23 @@
 							</a>
 						</div>
 					</form>
-					<a
-						class="nav-link d-flex justify-content-end"
-						href="#searchForm"
-						data-bs-target="#searchForm"
-						data-bs-toggle="collapse"
-					>
-						<div class="search-open-button d-flex">
-							<img
-								src="images/search.png"
-								alt="Search"
-								srcset=""
-								class="w-25"
-							/>
-						</div>
-					</a>
 				</div>
+				<a
+					class="nav-link d-flex justify-content-end #searchForm"
+					href="#searchForm"
+					aria-expanded="false"
+					data-bs-target="#searchForm"
+					data-bs-toggle="collapse"
+				>
+					<div class="search-open-button d-flex #searchForm">
+						<img
+							src="images/search.png"
+							alt="Search"
+							srcset=""
+							style="max-width: 30px"
+						/>
+					</div>
+				</a>
 			</div>
 		</div>
 		<!-- Background image start-->
@@ -250,7 +252,7 @@
 						<div class="row">
 							<div class="col-lg-6 col-sm-6">
 								<div class="row">
-									<h4>Location</h4>
+									<h4 class="display-emphasis">Location</h4>
 									<div
 										class="container-sm rounded-3 d-flex gap-3 align-items-center justify-content-center"
 									>
@@ -268,29 +270,31 @@
 							<!-- Route End -->
 							<!-- Event Info start -->
 							<div class="col-lg-6 col-sm-6">
-								<h4>Event Info</h4>
+								<h4 class="display-emphasis">Event Info</h4>
 
-								<div class="icons d-flex justify-content-center">
+								<div
+									class="col-lg-6 col-sm-6 icons d-flex justify-content-center gap-2"
+								>
 									<div class="icon img-fluid">
 										<img
-											src="images/bus-solid.svg"
-											alt=""
+											src="images/wheelchair.svg"
+											alt="Wheelchair Accessible"
 											srcset=""
 											style="min-width: 30px"
 										/>
 									</div>
 									<div class="icon img-fluidS">
 										<img
-											src="images/bus-solid.svg"
-											alt=""
+											src="images/deaf.svg"
+											alt="Deaf Accessible"
 											srcset=""
 											style="min-width: 30px"
 										/>
 									</div>
 									<div class="icon img-fluid">
 										<img
-											src="images/bus-solid.svg"
-											alt=""
+											src="images/ad.svg"
+											alt="Audio Description available"
 											srcset=""
 											style="min-width: 30px"
 										/>
@@ -300,20 +304,64 @@
 							</div>
 						</div>
 					</div>
-
-					<div class="container mt-3">
+					<div class="col-12">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+							dolore minima rerum, vel aperiam, laudantium fugiat velit corporis
+							exercitationem maiores ut accusantium pariatur nam accusamus hic
+							esse molestiae provident
+						</p>
+					</div>
+					<div class="container-lg">
 						<div class="row">
-							<div class="col-12">
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
-									dolore minima rerum, vel aperiam, laudantium fugiat velit
-									corporis exercitationem maiores ut accusantium pariatur nam
-									accusamus hic esse molestiae provident voluptatum fuga
-									sapiente cupiditate, tempore odit! Consequatur, quidem
-									aspernatur quasi assumenda quibusdam recusandae fugit facere
-									similique iste! Pariatur et deleniti, architecto distinctio
-									officia doloribus magni inventore in! Consectetur ad amet eos.
-								</p>
+							<div class="col-4">
+								<h3 class="fw-bold display-emphasis">Tags</h3>
+							</div>
+						</div>
+					</div>
+					<div class="container-lg">
+						<div class="row align-items-center justify-content-center">
+							<div class="col-3">
+								<a
+									href="#"
+									class="btn btn-grey text-accent p-2 shadow-lg mb-5 bg-body rounded-5"
+									>Ireland Events</a
+								>
+							</div>
+							<div class="col-3">
+								<a
+									href="#"
+									class="btn btn-grey text-accent p-2 shadow-lg mb-5 bg-body rounded-5"
+									>Dublin city</a
+								>
+							</div>
+							<div class="col-3">
+								<a
+									href="#"
+									class="btn btn-grey text-accent p-2 shadow-lg mb-5 bg-body rounded-5"
+									>Festive</a
+								>
+							</div>
+							<div class="col-3">
+								<a
+									href="#"
+									class="btn btn-grey text-accent p-2 shadow-lg mb-5 bg-body rounded-5"
+									>Family Friendly</a
+								>
+							</div>
+							<div class="col-3">
+								<a
+									href="#"
+									class="btn btn-grey text-accent p-2 shadow-lg mb-5 bg-body rounded-5"
+									>Limited availability</a
+								>
+							</div>
+							<div class="col-3">
+								<a
+									href="#"
+									class="btn btn-grey text-accent p-2 shadow-lg mb-5 bg-body rounded-5"
+									>Christmas</a
+								>
 							</div>
 						</div>
 					</div>
@@ -340,22 +388,80 @@
 						<div class="card-img">
 							<img src="images/map.PNG" alt="" srcset="" class="w-100" />
 						</div>
-						<div class="d-flex">
+						<!-- <div class="d-flex align-items-center">
 							<h3>How to get there</h3>
-							<!-- .card>.row>.col-4>img:s+.col-8>p -->
-							<a
-								class="btn btn-white text-dark rounded-5 d-flex justify-content-center align-items-center"
-								href="event.html"
-								role="button"
-							>
-								<img
-									src="images/map-pin-solid.svg"
-									class="rounded-top-5"
-									style="min-width: 10px; max-width: 20px"
-									alt="Map"
-								/>
-								<p>Open in Google Maps</p>
-							</a>
+							<div class="img-group d-flex align-items-center">
+								<a
+									class="btn btn-white rounded-5 d-flex"
+									href="event.html"
+									role="button"
+								>
+									<img
+										src="images/map-pin-solid.svg"
+										class="rounded-top-5 img-fluid ms-n5"
+										style="max-width: 20%; min-width: 15%"
+										alt="Map"
+									/>
+									<button class="d-inline flex-nowrap">
+										Open in Google Maps
+									</button>
+								</a>
+							</div>
+						</div> -->
+						<!-- <div class="card-body d-flex align-items-center">
+							<h5 class="card-title">How to get there</h5>
+							<div class="d-flex flex-row align-items-center">
+								<button
+									class="d-flex align-items-center btn btn-danger rounded-5 d-flex m-0"
+								>
+									<img
+										src="images/map-pin-solid.svg"
+										class="rounded-top-5 img-fluid ms-n5"
+										style="max-width: 20%; min-width: 15%"
+										alt="Map"
+									/>
+									<p class="m-0 d-flex">Open in Google Maps</p>
+								</button>
+							</div>
+						</div> -->
+						<!-- <div class="card-body d-flex align-items-center">
+							<h5 class="card-title">How to get there</h5>
+							<div class="d-flex flex-row align-items-center">
+								<button
+									class="d-flex flex-row align-items-center btn btn-danger rounded-5 d-flex m-0"
+								>
+									<img
+										src="images/map-pin-solid.svg"
+										class="rounded-top-5 img-fluid"
+										style="max-width: 20%; min-width: 15%"
+										alt="Map"
+									/>
+									<p class="m-0 d-flex flex-row fit">Open in Google Maps</p>
+								</button>
+							</div>
+						</div> -->
+
+						<div class="card-body d-flex align-items-center">
+							<h5 class="card-title">How to get there</h5>
+							<div class="d-flex flex-row align-items-center">
+								<button
+									class="d-flex flex-row align-items-center btn btn-danger rounded-5 m-0"
+								>
+									<img
+										src="images/map-pin-solid.svg"
+										class="rounded-top-5 img-fluid"
+										style="max-width: 20%; min-width: 15%"
+										alt="Map"
+									/>
+									
+									<p
+										class="m-0 d-flex flex-row text-center"
+										style="font-size: 0.8em"
+									>
+										Open in Google Maps
+									</p>
+								</button>
+							</div>
 						</div>
 						<div class="card-body">
 							<div class="container">
@@ -427,7 +533,7 @@
 				<div class="col-md-4 mb-4" style="max-width: 540px">
 					<span class="d-flex justify-content-end pe-auto">
 						<div
-							class="event2-toggle"
+							class="event2-toggle pe-auto add"
 							data-bs-toggle="collapse"
 							data-bs-target="#event2"
 							aria-controls="event2"
@@ -458,7 +564,7 @@
 				<div class="mb-3 col-md-4" style="max-width: 540px">
 					<span class="d-flex justify-content-end">
 						<div
-							class="event3-toggle pe-auto"
+							class="event3-toggle pe-auto add"
 							data-bs-toggle="collapse"
 							data-bs-target="#event3"
 							aria-controls="event3"
@@ -488,7 +594,7 @@
 				<div class="col-md-4 mb-4" style="max-width: 540px">
 					<span class="d-flex justify-content-end pe-auto">
 						<div
-							class="event2-toggle"
+							class="event2-toggle pe-auto add"
 							data-bs-toggle="collapse"
 							data-bs-target="#event2"
 							aria-controls="event2"
@@ -519,7 +625,7 @@
 				<div class="mb-3 col-md-4" style="max-width: 540px">
 					<span class="d-flex justify-content-end">
 						<div
-							class="event3-toggle pe-auto"
+							class="event3-toggle pe-auto add"
 							data-bs-toggle="collapse"
 							data-bs-target="#event3"
 							aria-controls="event3"
@@ -549,7 +655,7 @@
 				<div class="col-md-4 mb-4" style="max-width: 540px">
 					<span class="d-flex justify-content-end pe-auto">
 						<div
-							class="event2-toggle"
+							class="event2-toggle pe-auto add"
 							data-bs-toggle="collapse"
 							data-bs-target="#event2"
 							aria-controls="event2"
@@ -580,7 +686,7 @@
 				<div class="mb-3 col-md-4" style="max-width: 540px">
 					<span class="d-flex justify-content-end">
 						<div
-							class="event3-toggle pe-auto"
+							class="event3-toggle pe-auto add"
 							data-bs-toggle="collapse"
 							data-bs-target="#event3"
 							aria-controls="event3"

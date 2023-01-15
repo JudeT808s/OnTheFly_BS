@@ -36,7 +36,7 @@
 
 							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 								<li class="nav-item">
-									<a class="nav-link text-light" href="#">Home</a>
+									<a class="nav-link text-light" href="index.html">Home</a>
 								</li>
 								<li>
 									<a class="nav-link text-light" href="#">On Tonight</a>
@@ -123,16 +123,22 @@
 		</div>
 		<!-- Background image end -->
 		<!-- Sidebar -->
-
-		<button
-			class="btn"
-			type="button"
+		<!-- Sidebar button start -->
+		<div
+			class="btn-invis d-flex ms-2"
+			type=""
 			data-bs-toggle="offcanvas"
 			data-bs-target="#offcanvas"
 			aria-controls="offcanvas"
 		>
-			test<img src="images/bus-solid.svg" alt="" srcset="" />
-		</button>
+			<img
+				src="images/burger.svg"
+				alt="Sidebar image"
+				srcset=""
+				style="width: 3%; height: 3%"
+			/>
+		</div>
+		<!-- Sidebar button end -->
 		<!-- Start of Sidebar -->
 		<div
 			class="offcanvas offcanvas-start"
@@ -140,201 +146,207 @@
 			id="offcanvas"
 			aria-labelledby="sidebarLabel"
 		>
-			<div class="sidebar-header d-flex">
-				<h5 class="sidebar-title" id="sidebarLabel"></h5>
-				<div class="close d-flex justify-content-end">
-					<button
-						type="button"
-						class="btn-close"
-						data-bs-dismiss="offcanvas"
-						aria-label="Close"
-					></button>
-				</div>
-			</div>
-			<div class="sidebar-body">
-				<span class="display-emphasis"><h3>Events</h3></span>
-				<ul class="list-unstyled">
-					<li><a href="#">View All</a></li>
-					<li><a href="#">Live</a></li>
-					<li><a href="#">Music</a></li>
-					<li><a href="#">Sport</a></li>
-					<li><a href="#">Family Friendly</a></li>
-				</ul>
-				<div class="cuisine dropdown mt-3">
-					<button
-						class="btn btn-secondary dropdown-toggle"
-						type="button"
-						data-bs-toggle="dropdown"
-					>
-						Cuisine
-					</button>
-					<div class="dropdown-menu">
-						<div class="form-check form-switch">
-							<input
-								class="form-check-input"
-								type="checkbox"
-								role="switch"
-								id="Indian"
-							/>
-							<label class="form-check-label" for="Indian">Indian</label>
-						</div>
-						<div class="form-check form-switch">
-							<input
-								class="form-check-input"
-								type="checkbox"
-								role="switch"
-								id="Chinese"
-							/>
-							<label class="form-check-label" for="Chinese">Chinese</label>
-						</div>
-						<div class="form-check form-switch">
-							<input
-								class="form-check-input"
-								type="checkbox"
-								role="switch"
-								id="Italian"
-							/>
-							<label class="form-check-label" for="Italian">Italian</label>
-						</div>
-						<div class="form-check form-switch">
-							<input
-								class="form-check-input"
-								type="checkbox"
-								role="switch"
-								id="American"
-							/>
-							<label class="form-check-label" for="American">American</label>
-						</div>
+			<div class="sidebar ms-3">
+				<div class="sidebar-header">
+					<h5 class="sidebar-title display-emphasis"></h5>
+					<div class="close d-flex justify-content-end">
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="offcanvas"
+							aria-label="Close"
+						></button>
 					</div>
 				</div>
-				<div class="group dropdown mt-3">
-					<button
-						class="btn btn-secondary dropdown-toggle"
-						type="button"
-						data-bs-toggle="dropdown"
-					>
-						Group Size
-					</button>
-					<div class="dropdown-menu">
-						<div class="form-check form-radio">
-							<input type="radio" name="btnradio" id="btnradio1" />
-							Small less than 3
+				<div class="sidebar-body">
+					<span class="display-emphasis"><h3>Events</h3></span>
+					<ul class="list-unstyled">
+						<li><a href="#">View All</a></li>
+						<li><a href="#">Live</a></li>
+						<li><a href="#">Music</a></li>
+						<li><a href="#">Sport</a></li>
+						<li><a href="#">Family Friendly</a></li>
+					</ul>
+					<div class="cuisine dropdown mt-3">
+						<button
+							class="btn btn-secondary dropdown-toggle"
+							type="button"
+							data-bs-toggle="dropdown"
+						>
+							Cuisine
+						</button>
+						<div class="dropdown-menu">
+							<div class="form-check form-switch">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									role="switch"
+									id="Indian"
+								/>
+								<label class="form-check-label" for="Indian">Indian</label>
+							</div>
+							<div class="form-check form-switch">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									role="switch"
+									id="Chinese"
+								/>
+								<label class="form-check-label" for="Chinese">Chinese</label>
+							</div>
+							<div class="form-check form-switch">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									role="switch"
+									id="Italian"
+								/>
+								<label class="form-check-label" for="Italian">Italian</label>
+							</div>
+							<div class="form-check form-switch">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									role="switch"
+									id="American"
+								/>
+								<label class="form-check-label" for="American">American</label>
+							</div>
 						</div>
-						<div class="form-check form-radio">
-							<input type="radio" name="btnradio" id="btnradio2" />
-							Medium less than 6
+					</div>
+					<div class="group dropdown mt-3">
+						<button
+							class="btn btn-secondary dropdown-toggle"
+							type="button"
+							data-bs-toggle="dropdown"
+						>
+							Group Size
+						</button>
+						<div class="dropdown-menu">
 							<div class="form-check form-radio">
-								<input type="radio" name="btnradio" id="btnradio3" />
+								<input type="radio" name="btnradio" id="btnradio1" />
+								Small less than 3
+							</div>
+							<div class="form-check form-radio">
+								<input type="radio" name="btnradio" id="btnradio2" />
+								Medium less than 6
+								<div class="form-check form-radio">
+									<input type="radio" name="btnradio" id="btnradio3" />
 
-								Large less than 10
+									Large less than 10
+								</div>
+								<div class="form-check form-radio">
+									<input type="radio" name="btnradio" id="btnradio" />
+									Large Group 10+
+								</div>
 							</div>
-							<div class="form-check form-radio">
-								<input type="radio" name="btnradio" id="btnradio" />
-								Large Group 10+
+						</div>
+					</div>
+					<div class="allergy dropdown mt-3">
+						<button
+							class="btn btn-secondary dropdown-toggle"
+							type="button"
+							data-bs-toggle="dropdown"
+						>
+							Allergies
+						</button>
+						<div class="dropdown-menu">
+							<div class="form-check form-switch">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									role="switch"
+									id="Peanuts"
+								/>
+								<label class="form-check-label" for="Peanuts">Peanuts</label>
+							</div>
+							<div class="form-check form-switch">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									role="switch"
+									id="Crustacean"
+								/>
+								<label class="form-check-label" for="Crustacean"
+									>Crustacean</label
+								>
+							</div>
+							<div class="form-check form-switch">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									role="switch"
+									id="Wheat"
+								/>
+								<label class="form-check-label" for="Wheat">Wheat</label>
+							</div>
+							<div class="form-check form-switch">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									role="switch"
+									id="Fish"
+								/>
+								<label class="form-check-label" for="Fish">Fish</label>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="allergy dropdown mt-3">
-					<button
-						class="btn btn-secondary dropdown-toggle"
-						type="button"
-						data-bs-toggle="dropdown"
-					>
-						Allergies
-					</button>
-					<div class="dropdown-menu">
-						<div class="form-check form-switch">
-							<input
-								class="form-check-input"
-								type="checkbox"
-								role="switch"
-								id="Peanuts"
-							/>
-							<label class="form-check-label" for="Peanuts">Peanuts</label>
-						</div>
-						<div class="form-check form-switch">
-							<input
-								class="form-check-input"
-								type="checkbox"
-								role="switch"
-								id="Crustacean"
-							/>
-							<label class="form-check-label" for="Crustacean"
-								>Crustacean</label
-							>
-						</div>
-						<div class="form-check form-switch">
-							<input
-								class="form-check-input"
-								type="checkbox"
-								role="switch"
-								id="Wheat"
-							/>
-							<label class="form-check-label" for="Wheat">Wheat</label>
-						</div>
-						<div class="form-check form-switch">
-							<input
-								class="form-check-input"
-								type="checkbox"
-								role="switch"
-								id="Fish"
-							/>
-							<label class="form-check-label" for="Fish">Fish</label>
+					<div class="location dropdown mt-3">
+						<button
+							class="btn btn-secondary dropdown-toggle"
+							type="button"
+							data-bs-toggle="dropdown"
+						>
+							Location
+						</button>
+						<div class="dropdown-menu">
+							<div class="form-check form-switch">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									role="switch"
+									id="Dublin1"
+								/>
+								<label class="form-check-label" for="Dublin1">Dublin 1</label>
+							</div>
+							<div class="form-check form-switch">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									role="switch"
+									id="Dublin2"
+								/>
+								<label class="form-check-label" for="Dublin2">Dublin 2</label>
+							</div>
+							<div class="form-check form-switch">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									role="switch"
+									id="Dublin3"
+								/>
+								<label class="form-check-label" for="Dublin3">Dublin 3</label>
+							</div>
+							<div class="form-check form-switch">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									role="switch"
+									id="Dublin4"
+								/>
+								<label class="form-check-label" for="Dublin4">Dublin 4</label>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="location dropdown mt-3">
-					<button
-						class="btn btn-secondary dropdown-toggle"
-						type="button"
-						data-bs-toggle="dropdown"
-					>
-						Location
-					</button>
-					<div class="dropdown-menu">
-						<div class="form-check form-switch">
-							<input
-								class="form-check-input"
-								type="checkbox"
-								role="switch"
-								id="Dublin1"
-							/>
-							<label class="form-check-label" for="Dublin1">Dublin 1</label>
+					<div class="budget-slider col-9">
+						<h4 class="display-emphasis">Budget</h4>
+						<div class="range">
+							<input type="range" class="form-range" id="customRange1" />
 						</div>
-						<div class="form-check form-switch">
-							<input
-								class="form-check-input"
-								type="checkbox"
-								role="switch"
-								id="Dublin2"
-							/>
-							<label class="form-check-label" for="Dublin2">Dublin 2</label>
+						<div class="d-flex justify-content-between text-accent">
+							<p>$</p>
+							<p>$$$</p>
 						</div>
-						<div class="form-check form-switch">
-							<input
-								class="form-check-input"
-								type="checkbox"
-								role="switch"
-								id="Dublin3"
-							/>
-							<label class="form-check-label" for="Dublin3">Dublin 3</label>
-						</div>
-						<div class="form-check form-switch">
-							<input
-								class="form-check-input"
-								type="checkbox"
-								role="switch"
-								id="Dublin4"
-							/>
-							<label class="form-check-label" for="Dublin4">Dublin 4</label>
-						</div>
-					</div>
-				</div>
-				<div class="budget-slider col-6">
-					<h4>Budget</h4>
-					<div class="range">
-						<input type="range" class="form-range" id="customRange1" />
 					</div>
 				</div>
 			</div>
@@ -345,7 +357,7 @@
 			<div class="row align-items-center justify-content-center">
 				<div class="col-lg-3 col-sm-3">
 					<div
-						class="bg-secondary rounded-3 d-flex align-items-center gap-1 mb-2 btn"
+						class="bg-music text-light rounded-3 d-flex align-items-center gap-1 mb-2 btn"
 					>
 						<img
 							src="images/music.png"
@@ -358,7 +370,7 @@
 				</div>
 				<div class="col-lg-3 col-sm-3">
 					<div
-						class="bg-secondary rounded-3 d-flex align-items-center gap-1 mb-2 btn"
+						class="bg-food text-light rounded-3 d-flex align-items-center gap-1 mb-2 btn"
 					>
 						<img
 							src="images/drink.svg"
@@ -371,7 +383,7 @@
 				</div>
 				<div class="col-lg-3 col-sm-3">
 					<div
-						class="bg-secondary rounded-3 d-flex align-items-center gap-1 mb-2 btn"
+						class="bg-sport rounded-3 d-flex align-items-center gap-1 mb-2 btn"
 					>
 						<img
 							src="images/sport.svg"
@@ -384,20 +396,15 @@
 				</div>
 				<div class="col-lg-3 col-sm-3">
 					<div
-						class="bg-secondary rounded-3 d-flex align-items-center gap-1 mb-2 btn"
+						class="bg-culture text-light rounded-3 d-flex align-items-center gap-1 mb-2 btn"
 					>
-						<img
-							src="images/mask.svg"
-							class="img-fluid"
-							alt="Arts"
-							style="max-width: 35px"
-						/>
+						<img src="images/mask.svg" alt="Arts" style="max-width: 35px" />
 						<h5 class="card-title">Visual Arts</h5>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-3">
 					<div
-						class="bg-secondary rounded-3 d-flex align-items-center gap-1 mb-2 btn"
+						class="bg-game text-light rounded-3 d-flex align-items-center gap-1 mb-2 btn"
 					>
 						<img
 							src="images/game.svg"
@@ -423,7 +430,7 @@
 				</div>
 				<div class="col-lg-3 col-sm-3">
 					<div
-						class="bg-secondary rounded-3 d-flex align-items-center gap-1 mb-2 btn"
+						class="bg-accent rounded-3 d-flex align-items-center gap-1 mb-2 btn"
 					>
 						<img
 							src="images/charity.svg"
@@ -436,7 +443,7 @@
 				</div>
 				<div class="col-lg-3 col-sm-3">
 					<div
-						class="bg-secondary rounded-3 d-flex align-items-center gap-1 mb-2 btn"
+						class="bg-education rounded-3 d-flex align-items-center gap-1 mb-2 btn"
 					>
 						<img
 							src="images/education.svg"
@@ -449,7 +456,11 @@
 				</div>
 			</div>
 		</div>
+		<!-- End of filter cards -->
 		<div class="container-lg">
+			<div class="col-lg-4">
+				<h2 class="display-emphasis text-accent">Nearby Events</h2>
+			</div>
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="card-lg">
@@ -584,60 +595,76 @@
 		<div class="container-lg mt-4 mb-4">
 			<div class="row">
 				<div class="col-lg-3">
-					<span class="display-emphasis"> <h5>Our Picks</h5></span>
-
+					<span class="display-emphasis text-accent text-center">
+						<h3>Our Picks</h3></span
+					>
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-lg-6 mb-2">
 							<div class="card">
 								<img
-									src="images/crimbo.jpg"
+									src="images/df.jpeg"
 									class="card-img-top img-fluid rounded-2 shadow-sm card-img-top"
-									alt="Christmas Market"
+									style="min-height: 7.5rem; max-height: 222px"
+									alt="60% off at Drunken Fish"
 								/>
 								<div class="card-body">
-									<h4 class="card-title">Winter solstice celebration</h4>
+									<h5 class="card-title">
+										<a href="#">60% off at Drunken Fish</a>
+									</h5>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6">
+						<div class="col-lg-6 mb-2">
 							<div class="card">
 								<img
-									src="images/crimbo.jpg"
+									src="images/jameson.jpg"
 									class="card-img-top img-fluid rounded-2 shadow-sm card-img-top"
-									alt="Christmas Market"
+									style="min-height: 7.5rem; max-height: 222px"
+									alt="Free drink at Jameson"
 								/>
 								<div class="card-body">
-									<h4 class="card-title">Winter solstice celebration</h4>
+									<h5 class="card-title">
+										<a href="#">Free drink at Jameson</a>
+									</h5>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6">
+						<div class="col-lg-6 mb-2">
 							<div class="card">
 								<img
-									src="images/crimbo.jpg"
+									src="images/ourRoute.png"
 									class="card-img-top img-fluid rounded-2 shadow-sm card-img-top"
-									alt="Christmas Market"
+									style="min-height: 7.5rem; max-height: 222px"
+									alt="Save up to 20% on this route"
 								/>
 								<div class="card-body">
-									<h4 class="card-title">Winter solstice celebration</h4>
+									<h5 class="card-title">
+										<a href="#">Save up to 20% on this route</a>
+									</h5>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6">
+						<div class="col-lg-6 mb-2">
 							<div class="card">
 								<img
 									src="images/crimbo.jpg"
 									class="card-img-top img-fluid rounded-2 shadow-sm card-img-top"
+									style="min-height: 7.5rem; max-height: 222px"
 									alt="Christmas Market"
 								/>
 								<div class="card-body">
-									<h4 class="card-title">Winter solstice celebration</h4>
+									<h5 class="card-title">
+										<a href="#">Final day for christmas goodies!</a>
+									</h5>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-9">
+					<div class="col-lg-4">
+						<h2 class="display-emphasis text-accent">Nearby Events</h2>
+					</div>
 					<div class="row">
 						<div class="col-md-4 mb-1">
 							<div class="card-lg">
