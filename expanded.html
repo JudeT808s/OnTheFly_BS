@@ -34,9 +34,16 @@
 						<div class="col-12">
 							<div class="collapse navbar-collapse" id="nowExpand">
 								<a
-									class="navbar-brand text-light d-flex justify-content-start"
+									class="navbar-brand text-light d-flex justify-content-start gap-3"
 									href="#"
-									>OnTheFly
+								>
+									<img
+										src="images/logo.svg"
+										alt=""
+										srcset=""
+										style="width: 30px; height: 30px"
+										class="change-colour"
+									/>OnTheFly
 								</a>
 
 								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -107,107 +114,114 @@
 					<div class="col-lg-3 col-md-2">
 						<div class="accordion accordion-flush" id="accordionFlushExample">
 							<div class="accordion-item">
-								<h2 class="accordion-header" id="flush-headingOne">
+								<h2 class="accordion-header" id="Route1">
 									<button
 										class="accordion-button collapsed"
 										type="button"
 										data-bs-toggle="collapse"
-										data-bs-target="#flush-collapseOne"
+										data-bs-target="#Route-collapse1"
 										aria-expanded="false"
-										aria-controls="flush-collapseOne"
+										aria-controls="Route-collapse1"
 									>
 										Route 1
 									</button>
 								</h2>
 								<div
-									id="flush-collapseOne"
+									id="Route-collapse1"
 									class="accordion-collapse collapse"
-									aria-labelledby="flush-headingOne"
-									data-bs-parent="#accordionFlushExample"
+									aria-labelledby="Route1"
 								>
 									<div class="accordion-body">
 										<ul class="list-unstyled">
-											<li>Example</li>
-											<li>Example</li>
-											<li>Example</li>
+											<li>Kid Cudi Adventure Land</li>
+											<li>Pyramid Festival</li>
+											<li>Wine Tasting</li>
 										</ul>
 									</div>
 								</div>
 							</div>
 							<div class="accordion-item">
-								<h2 class="accordion-header" id="flush-headingTwo">
+								<h2 class="accordion-header" id="Route2">
 									<button
 										class="accordion-button collapsed"
 										type="button"
 										data-bs-toggle="collapse"
-										data-bs-target="#flush-collapseTwo"
+										data-bs-target="#Route-collapse2"
 										aria-expanded="false"
-										aria-controls="flush-collapseTwo"
+										aria-controls="Route-collapse2"
 									>
 										Route 2
 									</button>
 								</h2>
 								<div
-									id="flush-collapseTwo"
+									id="Route-collapse2"
 									class="accordion-collapse collapse"
-									aria-labelledby="flush-headingTwo"
-									data-bs-parent="#accordionFlushExample"
+									aria-labelledby="Route2"
 								>
 									<div class="accordion-body">
-										Placeholder content for this accordion, which is intended to
-										demonstrate the <code>.accordion-flush</code> class. This is
-										the second item's accordion body. Let's imagine this being
-										filled with some actual content.
+										<ul class="list-unstyled">
+											<li>Skydiving</li>
+											<li>Rock climbing training</li>
+											<li>Wilderness sleepout</li>
+										</ul>
 									</div>
 								</div>
 							</div>
 							<div class="accordion-item">
-								<h2 class="accordion-header" id="flush-headingThree">
+								<h2 class="accordion-header" id="Route3">
 									<button
 										class="accordion-button collapsed"
 										type="button"
 										data-bs-toggle="collapse"
-										data-bs-target="#flush-collapseThree"
+										data-bs-target="#Route-collapse3"
 										aria-expanded="false"
-										aria-controls="flush-collapseThree"
+										aria-controls="Route-collapse3"
 									>
 										Route 3
 									</button>
 								</h2>
 								<div
-									id="flush-collapseThree"
+									id="Route-collapse3"
 									class="accordion-collapse collapse"
-									aria-labelledby="flush-headingThree"
-									data-bs-parent="#accordionFlushExample"
+									aria-labelledby="Route3"
 								>
 									<div class="accordion-body">
-										Placeholder content for this accordion, which is intended to
-										demonstrate the <code>.accordion-flush</code> class. This is
-										the third item's accordion body. Nothing more exciting
-										happening here in terms of content, but just filling up the
-										space to make it look, at least at first glance, a bit more
-										representative of how this would look in a real-world
-										application.
+										<ul class="list-unstyled">
+											<li>Ireland V Ukraine</li>
+											<li>Stormzy at the O2</li>
+											<li>Cheese Tasting</li>
+										</ul>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- How to get there start -->
+					<!-- Main headline -->
 					<div class="col-lg-6">
-						<span class="display-emphasis">
-							<h1>Kid Cudi Adventure Land</h1></span
-						>
-						<p class="fw-light">
-							"The Adventures of Moon Man & Slim Shady" is a song by American
-							rappers Kid Cudi and Eminem.
-						</p>
+						<div class="collapse event-collapse" id="Route-collapse1">
+							<span class="display-emphasis">
+								<h1>Kid Cudi Adventure Land</h1></span
+							>
+							<p class="fw-light">
+								"The Adventures of Moon Man & Slim Shady" is a song by American
+								rappers Kid Cudi and Eminem.
+							</p>
+						</div>
+						<div class="collapse event-collapse" id="Route-collapse2">
+							<span class="display-emphasis"> <h1>Skydiving</h1></span>
+							<p class="fw-light">Jumping out of a plane</p>
+						</div>
+						<div class="collapse event-collapse" id="Route-collapse3">
+							<span class="display-emphasis"> <h1>Ireland V Ukraine</h1></span>
+							<p class="fw-light">The final qualifying round for Euro 2024</p>
+						</div>
+
 						<div class="card">
 							<div
 								class="row align-content-center justify-content-center border border-top-0 border-end-0 border-start-0 py-3"
 							>
 								<div class="col-7">
-									<h5>General Admission</h5>
+									<h5 class="ms-1">General Admission</h5>
 								</div>
 								<div class="col-5">
 									<div class="qty col-lg-12 col-sm-6">
@@ -219,10 +233,10 @@
 							</div>
 							<div class="row py-3">
 								<div class="col-6">
-									<p>Estimated Cost</p>
+									<p class="ms-1">Estimated Cost</p>
 								</div>
 								<div class="col-6">
-									<p>£12.00</p>
+									<p>€12.00</p>
 								</div>
 							</div>
 						</div>
@@ -241,7 +255,7 @@
 								<p class="fw-light">Order Summary</p>
 							</div>
 							<div class="col-6">
-								<p>£12.00</p>
+								<p>€60</p>
 							</div>
 						</div>
 						<div class="row">
@@ -249,7 +263,7 @@
 								<p>Deposit amount:</p>
 							</div>
 							<div class="col-6">
-								<p>£5.00</p>
+								<p>€5.00</p>
 							</div>
 						</div>
 						<div class="d-flex justify-content-center align-items-center">

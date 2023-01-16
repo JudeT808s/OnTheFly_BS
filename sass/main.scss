@@ -125,9 +125,8 @@ input:disabled{
 
 .bg-image .mask{
   position: absolute;
- 
-  width: 100%;
   height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -240,6 +239,7 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  6: $spacer * 4.5,
 ) !default;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
@@ -270,5 +270,11 @@ $spacers: (
   position: absolute;
   bottom: 3%;
   left: 25%;
+}
+.change-colour {
+  fill: white;
+}
+svg{
+  fill:white;
 }
 
