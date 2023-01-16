@@ -240,7 +240,9 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 3,
   6: $spacer * 4.5,
-) !default;
+  10: $spacer * 10,
+  30: $spacer * 25,
+) ;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -255,7 +257,10 @@ $spacers: (
 .card-lg{
   @extend .card;
   min-height: 490px;
-
+}
+.card-mini{
+  @extend .card;
+  padding: 0 !important;
 }
 .btn-invis{
   @extend .btn; 
@@ -276,5 +281,11 @@ $spacers: (
 }
 svg{
   fill:white;
+}
+.img-group{
+  box-shadow:   0 .05rem 0.1rem rgba($black, .15) !important;
+  border-radius: 1rem;
+  align-items: center;
+  justify-self: center;
 }
 
